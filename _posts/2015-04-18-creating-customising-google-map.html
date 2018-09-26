@@ -1,0 +1,265 @@
+---
+layout: jetpack-portfolio
+title: Creating & customizing a Google Map
+date: 2015-04-18 15:39:53.000000000 +02:00
+type: jetpack-portfolio
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  wcp_custom_script: ''
+  _oh_add_script_header: "<style>\r\n/* --- 3. Google Map --- */\r\n#map_canvas {\r\n\tbackground-color:
+    #CCC;\r\n\theight: 400px;\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.map {\r\n\tposition:
+    relative;\r\n\toverflow: hidden;\r\n}\r\n\r\n#placeDetails {\r\n\tbackground-color:
+    rgba(231,53,37,.8);\r\n\tbottom: 0;\r\n\tcolor: white;\r\n\tfont-size: .8em;\r\n\tpadding-left:
+    10px;\r\n\tpadding-right: 10px;\r\n\tposition: absolute;\r\n\tright: -110%;\r\n\ttext-align:
+    center;\r\n\twidth: 100%;\r\n}\r\n\r\n#placeDetails p {\r\n\tmargin-top: 0;\r\n}\r\n\r\n.gm-style-cc,
+    #map_canvas .gm-style > .gmnoprint > .gmnoprint > div > img {\r\n\tdisplay: none
+    !important;\r\n}\r\n\r\n#map_canvas .gm-style > .gmnoprint > .gmnoprint {\r\n\tbackground:
+    url(http://blog.thibaultjanbeyer.com/data/img/maps/controls.png) no-repeat center
+    center !important;\r\n\twidth: 42px !important;\r\n\theight: 68px !important;\r\n}\r\n\r\n#map_canvas
+    .gm-style > .gmnoprint > .gmnoprint div[title=\"Zoom in\"] {\r\n\ttop: 2px !important;\r\n\tleft:
+    2px !important;\r\n\twidth: 38px !important;\r\n\theight: 31px !important;\r\n}\r\n\r\n#map_canvas
+    .gm-style > .gmnoprint > .gmnoprint div[title=\"Zoom out\"] {\r\n\ttop: 35px !important;\r\n\tleft:
+    2px !important;\r\n\twidth: 38px !important;\r\n\theight: 30px !important;\r\n}\r\n</style>"
+  _oh_add_script_footer: "<script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?sensor=false\"></script>\r\n<script>\r\n\t//
+    This is how you style your map\r\nvar styles = [\r\n\t\t{ \"featureType\": \"landscape\",
+    \"stylers\": [ { \"hue\": \"#FFA800\" }, { \"saturation\": -100 }, { \"lightness\":
+    0 }, { \"gamma\": 1 } ] },\r\n\t\t{ \"featureType\": \"road.highway\", \"stylers\":
+    [ { \"hue\": \"#000000\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, {
+    \"gamma\": 1 } ] },\r\n\t\t{ \"featureType\": \"road.arterial\", \"stylers\":
+    [ { \"hue\": \"#FBFF00\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, {
+    \"gamma\": 1 } ] },\r\n\t\t{ \"featureType\": \"road.local\", \"stylers\": [ {
+    \"hue\": \"#00FFFD\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, { \"gamma\":
+    1 } ] },\r\n\t\t{ \"featureType\": \"water\", \"stylers\": [ { \"hue\": \"#0078FF\"
+    }, { \"saturation\": -22 }, { \"lightness\": 0 }, { \"gamma\": 1 } ] },\r\n\t\t{
+    \"featureType\": \"poi\", \"stylers\": [ { \"hue\": \"#9FFF00\" }, { \"saturation\":
+    -28.400000000000006 }, { \"lightness\": 0 }, { \"gamma\": 1 } ]}\r\n\t]\r\n\r\n\t//
+    Here we set the options\r\nvar mapOptions = {\r\n\t\tzoom:      10,\r\n\t\tcenter:
+    \   new google.maps.LatLng(50.8247059,7.053153),\r\n\t\tmapTypeId: google.maps.MapTypeId.ROADMAP,\r\n\t\tstyles:
+    styles,\r\n\t\tpanControl: false,\r\n\t\tzoomControl: true,\r\n\t\tscaleControl:
+    false,\r\n\t\tmapTypeControl: false,\r\n\t\tstreetViewControl: false,\r\n\t\toverviewMapControl:
+    false,\r\n\t\tzoomControlOptions: {\r\n    \t\tstyle: google.maps.ZoomControlStyle.SMALL\r\n
+    \t\t}\r\n}\r\n\r\n\t// Tell google where to place the map\r\nvar map = new google.maps.Map($(\"#map_canvas\")[0],
+    mapOptions);\r\n\r\n\t// Create a marker\r\nvar marker = new google.maps.Marker({\r\n\tposition:
+    new google.maps.LatLng(50.7097485,7.1094011),\r\n\tmap:      map,\r\n\ttitle:
+    \   'Creative Mate',\r\n\ticon:     'http://blog.thibaultjanbeyer.com/data/img/maps/cm-pin4.png'\r\n})\r\n\r\n\t//
+    Animate it\r\nmarker.setAnimation(google.maps.Animation.DROP)\r\n\r\n\t// Tell
+    where the infobox is\r\nvar info = $('#placeDetails');\r\n\t\r\n\t// Create the
+    info box with animation\r\n\t// Create a variable where you can store informations
+    about the current state of the infobox\r\nvar currentPlace = null;\r\n\r\n\t//
+    Add a click function to the marker\r\ngoogle.maps.event.addListener(marker, 'click',
+    function() {\r\n\tif (currentPlace) {\r\n\t\tinfo.animate({right: '210%'});\r\n\t\tcurrentPlace
+    = null;\r\n\t} else {\r\n\t\tinfo.animate({right: '0'});\r\n\t\tcurrentPlace =
+    marker;\r\n\t}\r\n})\r\n</script>\r\n<!--<script>\r\nfunction GoogleMap() {\r\nvar
+    styles = [\r\n\t\t{ \"featureType\": \"landscape\", \"stylers\": [ { \"hue\":
+    \"#FFA800\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, { \"gamma\": 1
+    } ]\r\n\t\t},\r\n\t\t{ \"featureType\": \"road.highway\", \"stylers\": [ { \"hue\":
+    \"#000000\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, { \"gamma\": 1
+    } ]\r\n\t\t},\r\n\t\t{ \"featureType\": \"road.arterial\", \"stylers\": [ { \"hue\":
+    \"#FBFF00\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, { \"gamma\": 1
+    } ]\r\n\t\t},\r\n\t\t{ \"featureType\": \"road.local\", \"stylers\": [ { \"hue\":
+    \"#00FFFD\" }, { \"saturation\": -100 }, { \"lightness\": 0 }, { \"gamma\": 1
+    } ]\r\n\t\t},\r\n\t\t{ \"featureType\": \"water\", \"stylers\": [ { \"hue\": \"#0078FF\"
+    }, { \"saturation\": -22 }, { \"lightness\": 0 }, { \"gamma\": 1 } ]\r\n\t\t},\r\n\t\t{
+    \"featureType\": \"poi\", \"stylers\": [ { \"hue\": \"#9FFF00\" }, { \"saturation\":
+    -28.400000000000006 }, { \"lightness\": 0 }, { \"gamma\": 1 } ]\r\n\t}]\r\n\tvar
+    melbourne = new google.maps.LatLng(-37.813611, 144.963056);\r\n\tvar mapOptions
+    = {\r\n\t\tzoom:      10,\r\n\t\tcenter:    new google.maps.LatLng(50.8247059,7.053153),\r\n\t\tmapTypeId:
+    google.maps.MapTypeId.ROADMAP,\r\n\t\tstyles: styles,\r\n\t\tpanControl: false,\r\n\t\tzoomControl:
+    true,\r\n\t\tscaleControl: false,\r\n\t\tmapTypeControl: false,\r\n\t\tstreetViewControl:
+    false,\r\n\t\toverviewMapControl: false,\r\n\t\tzoomControlOptions: {\r\n    \t\tstyle:
+    google.maps.ZoomControlStyle.SMALL\r\n \t\t}\r\n\r\n\t}\r\n\tvar map = new google.maps.Map($(\"#map_canvas\")[0],
+    mapOptions);\r\n\tvar marker = new google.maps.Marker({\r\n\t\tposition: new google.maps.LatLng(50.7097485,7.1094011),\r\n\t\tmap:
+    \     map,\r\n\t\ttitle:    'Creative Mate',\r\n\t\ticon:     'data/img/maps/cm-pin4.png'\r\n\t})\r\n\tmarker.setAnimation(google.maps.Animation.DROP)\r\n\tvar
+    currentPlace = null;\r\n\tvar info = $('#placeDetails');\r\n\tgoogle.maps.event.addListener(marker,
+    'click', function() {\r\n\t\tif (currentPlace) {\r\n\t\t\tinfo.animate({right:
+    '210%'});\r\n\t\t\tcurrentPlace = null;\r\n\t\t} else {\r\n\t\t\tinfo.animate({right:
+    '0'});\r\n\t\t\tcurrentPlace = marker;\r\n\t\t}\r\n\t})\r\n}\r\nGoogleMap();\r\n</script>-->"
+  _jetpack_related_posts_cache: a:1:{s:32:"8b265fe74299c9fbe5992d781d95c0f2";a:2:{s:7:"expires";i:1537982888;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2896;}i:1;a:1:{s:2:"id";i:2097;}i:2;a:1:{s:2:"id";i:1670;}}}}
+  _thumbnail_id: '1394'
+  _wpas_done_all: '1'
+  _notify_users_email_sended: '1'
+  _oh_add_script_header_hide: ''
+  _oh_add_script_footer_hide: ''
+  _wpas_skip_14083932: '1'
+  _wpas_skip_14158084: '1'
+  _wpas_skip_14158019: '1'
+  _wpas_skip_14158033: '1'
+  advertisement: "<div class=\"blog-adv\">\r\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\r\n<!--
+    Blog – Top -->\r\n<ins class=\"adsbygoogle\"\r\n     style=\"display:block\"\r\n
+    \    data-ad-client=\"ca-pub-7411822855484586\"\r\n     data-ad-slot=\"1399062816\"\r\n
+    \    data-ad-format=\"auto\"></ins>\r\n<script>\r\n(adsbygoogle = window.adsbygoogle
+    || []).push({});\r\n</script>\r\n</div>"
+  _advertisement: field_5743505110781
+author:
+  login: Thibault Jan Beyer
+  email: hi@thibaultjanbeyer.com
+  display_name: Thibault Jan Beyer
+  first_name: Thibault Jan
+  last_name: Beyer
+---
+<p>Here's a map I created some time ago with <a href="http://json.org/" target="_blank">JSON</a> and co.:</p>
+<div class="map">
+<div id="map_canvas"></div>
+<div id="placeDetails">53129 Bonn - This is where you'll find me.</div>
+</div>
+<p>&nbsp;</p>
+<p>Maybe I'll create a Google Maps Creator Tool some day but until then here's how to do it yourself.</p>
+<h2>1. Setting up</h2>
+<ul>
+<li>Add the <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Google API Script</a> to your Page (before the customizing script we're about to create). For this project  <span class="lang:xhtml decode:true crayon-inline ">&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;</span>  will do the trick.</li>
+</ul>
+<p>Everything is set up. Now we can create a container in which the map will be loaded later on. We do this in HTML like so:</p>
+<pre class="lang:xhtml decode:true ">&lt;div class="map"&gt;
+    &lt;div id="map_canvas"&gt;&lt;/div&gt;
+    &lt;div id='placeDetails'&gt;
+        &lt;p&gt;53129 Bonn - This is where you'll find me.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>&nbsp;</p>
+<p>The <em>#map_canvas</em> is our container for the map while <em>#placeDetails</em> is a custom button. Add that html anywhere you want your map to appear.</p>
+<p>If you’re not familiar with HTML <a href="https://developer.mozilla.org/en-US/Learn/HTML" target="_blank">go learn it</a>, it’s vital (and super easy).</p>
+<h2> 2. Styling the Containers</h2>
+<p>We now style our map container. We give it a grey background so if something is not working we see at least that there should be something. We also style the placeDetails as we like. Here I placed it outside our .map container (which overflow is hidden) to hide it by -110%. Later on we will change this value when triggered to get the fly in effect. Lastly I hide the default Google Maps buttons I don't want and add my own controls. Note that this was my last step <em>after</em> I successfully implemented the map. You can only find out the right elements to hide by <a href="https://developer.chrome.com/devtools/docs/dom-and-styles" target="_blank">inspecting</a> the map and searching for those elements. I've only already included it here for the sake of simplicity. Take a look at the <a href="http://www.w3.org/TR/CSS21/selector.html" target="_blank">CSS Selectors</a> if you don't understand how to select the right stuff to hide in CSS.</p>
+<pre class="lang:css decode:true">/* Style our Map */
+#map_canvas {
+    background-color: #CCC;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.map {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Style our Place Details */
+#placeDetails {
+    background-color: rgba(231,53,37,.8);
+    bottom: 0;
+    color: white;
+    font-size: .8em;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: -110%;
+    text-align: center;
+    width: 100%;
+}
+
+#placeDetails p {
+    margin-top: 0;
+}
+
+/* This is to hide the default GMap Buttons */
+.gm-style-cc, #map_canvas .gm-style &gt; .gmnoprint &gt; .gmnoprint &gt; div &gt; img {
+    display: none !important;
+}
+
+/* Place our own controls */
+#map_canvas .gm-style &gt; .gmnoprint &gt; .gmnoprint {
+    background: url(data/img/maps/controls.png) no-repeat center center !important; width: 42px !important; height: 68px !important;
+}
+/* Set where the Controls are, relative to the map canvas */
+#map_canvas .gm-style &gt; .gmnoprint &gt; .gmnoprint div[title="Zoom in"] { top: 2px !important; left: 2px !important; width: 38px !important; height: 31px !important; }
+#map_canvas .gm-style &gt; .gmnoprint &gt; .gmnoprint div[title="Zoom out"] { top: 35px !important; left: 2px !important; width: 38px !important; height: 30px !important; }</pre>
+<h2>3. Implementing &amp; Styling the map</h2>
+<p>First we set up all the styles. I used the <a href="http://googlemaps.github.io/js-samples/styledmaps/wizard/index.html" target="_blank">Styled Maps Wizzard</a> to find out the right JSON code to add in the styles variable. Then we set the options we want. There are <a href="https://developers.google.com/maps/documentation/javascript/reference?csw=1#MapOptions" target="_blank">a hell lot of options to add</a> feel free to customise it as you wish. Creating a marker is also straight forward. Choose at least the position, the title and the icon for good results. Of course there are more <a href="https://developers.google.com/maps/documentation/javascript/reference?csw=1#MarkerOptions" target="_blank">marker options</a> than those 3. By default there are only two kind of animations: BOUNCE and DROP. Bounce will let your marker constantly bounce while drop plays just once. Just try <a href="https://developers.google.com/maps/documentation/javascript/reference">every feature</a> out.</p>
+<pre class="lang:js decode:true ">// This is how you style your map
+var styles = [
+    { "featureType": "landscape", "stylers": [ { "hue": "#FFA800" }, { "saturation": -100 }, { "lightness": 0 }, { "gamma": 1 } ] },
+    { "featureType": "road.highway", "stylers": [ { "hue": "#000000" }, { "saturation": -100 }, { "lightness": 0 }, { "gamma": 1 } ] },
+    { "featureType": "road.arterial", "stylers": [ { "hue": "#FBFF00" }, { "saturation": -100 }, { "lightness": 0 }, { "gamma": 1 } ] },
+    { "featureType": "road.local", "stylers": [ { "hue": "#00FFFD" }, { "saturation": -100 }, { "lightness": 0 }, { "gamma": 1 } ] },
+    { "featureType": "water", "stylers": [ { "hue": "#0078FF" }, { "saturation": -22 }, { "lightness": 0 }, { "gamma": 1 } ] },
+    { "featureType": "poi", "stylers": [ { "hue": "#9FFF00" }, { "saturation": -28.400000000000006 }, { "lightness": 0 }, { "gamma": 1 } ]}
+]
+
+// Here we set the options
+var mapOptions = {
+    zoom: 10,
+    center: new google.maps.LatLng(50.8247059,7.053153),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: styles,
+    panControl: false,
+    zoomControl: true,
+    scaleControl: false,
+    mapTypeControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
+    zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL
+    }
+}
+
+// Tell google where to place the map
+var map = new google.maps.Map($("#map_canvas")[0], mapOptions);
+
+// Create a marker
+var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(50.7097485,7.1094011),
+    map: map,
+    title: 'Creative Mate',
+    icon: 'data/img/maps/cm-pin4.png'
+})
+
+// Animate it
+marker.setAnimation(google.maps.Animation.DROP)
+
+// Tell where the infobox is
+var info = $('#placeDetails');
+	
+// Create the info box with animation
+// Create a variable where you can store informations about the current state of the infobox
+var currentPlace = null;
+
+// Add a click function to the marker
+google.maps.event.addListener(marker, 'click', function() {
+// This is just for my animation, you can of course you can choose whatever to happen when this marker is clicked.
+    if (currentPlace) {
+        info.animate({right: '210%'});
+        currentPlace = null;
+    } else {
+        info.animate({right: '0'});
+        currentPlace = marker;
+    }
+})</pre>
+<p>With <span class="lang:js decode:true crayon-inline ">google.maps.event.addListener(marker, 'click', function(){})</span>  you can bind an action to the last marker.</p>
+<p>And that's it. Now you have an awesome customised map!</p>
+<h2>4. Enhancing (optional)</h2>
+<p>Now this is only a very light map with only one marker. But you can create multiples markers as well. An easy way to do this would be to put the places into arrays and using <a href="https://jquery.com/">jQuery</a> .each() functionality to add as much markers as variables. Do it like so:</p>
+<pre class="lang:js decode:true ">var places = [{
+    "title": "Pin 1",
+    "description": "This is pin #1",
+    "position": [ -12.123456, 123.123456 ],
+    "icon": "data/img/maps/cm-pin1.png",
+    "url": "www.pin1.com"
+},
+{
+    "title": "Pin 2",
+    "description": "The second pin.",
+    "position": [ -23.123456, 124.123456 ],
+    "icon": "data/img/maps/cm-pin2.png"
+    "url": "www.pin2.com"
+}]
+
+$(places).each(function() {
+    var place = this;
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(place.position[0], place.position[1]),
+        map: map,
+        title: place.title,
+        icon: place.icon,
+    })
+
+    google.maps.event.addListener(marker, 'click', function() {
+        window.location.href = place.url;
+    })
+})</pre>
+<p>&nbsp;</p>
+<p>Happy Mappin'!</p>
