@@ -4,6 +4,22 @@ body {
     font: 18px/1.4 $font-primary;
 }
 
+p, h1, h2, h3, h4, h5, h6, ul, ol, b, strong, span {
+  color: #444;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  -webkit-font-feature-settings: "liga" 1, "kern" 1, "swsh" 1;
+  font-feature-settings: "liga" 1, "kern" 1, "swsh" 1;
+  -moz-font-feature-settings: "liga=1, kern=1";
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: -0.005rem;
+  text-rendering: optimizeLegibility;
+}
+
 h1, h2, h3, h4 {
   font-weight: 700;
   font-style: italic;
@@ -57,20 +73,3 @@ p, ul, ol, b, strong, span {
     font-size: 2rem;
     line-height: 1.6;
 }
-
-p, h1, h2, h3, h4, h5, h6, ul, ol, b, strong, span {
-    color: #444;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-font-variant-ligatures: common-ligatures;
-    font-variant-ligatures: common-ligatures;
-    -webkit-font-feature-settings: "liga" 1, "kern" 1, "swsh" 1;
-    font-feature-settings: "liga" 1, "kern" 1, "swsh" 1;
-    -moz-font-feature-settings: "liga=1, kern=1";
-    -webkit-font-kerning: normal;
-    font-kerning: normal;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: -0.005rem;
-    text-rendering: optimizeLegibility;
-}
-
