@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Quick Guide to web typography
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: Typography is probably the most overlooked thing when developing for the web. However,…
+image: assets/choose-font.gif
+image_alt: Choose the right font
 ---
+
 <h6>Typography is probably the most overlooked thing when developing for the web. However, if you want a decent design, it’s the most important one.</h6>
 <div class="blog-adv--right">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7411822855484586" data-ad-slot="1399062816" data-ad-format="auto"></ins>

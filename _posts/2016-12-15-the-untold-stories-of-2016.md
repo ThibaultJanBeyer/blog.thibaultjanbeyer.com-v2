@@ -1,13 +1,11 @@
 ---
 layout: post
 title: The untold stories of 2016
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: Hello dear reader, this year happened so much, that I did not find…
+image: assets/IMG_20161215_123147-1024x768.jpg
+image_alt: Books
 ---
+
 <p>Hello dear reader, this year happened so much, that I did not find time to write an update earlier. Here is one that gives a brief overview on things that happened this year.</p>
 <p>So, I started the year with an internship at <a href="https://www.edenspiekermann.com/">edenspeakermann_</a>, a great, forward thinking agency where I met <a href="https://twitter.com/martzoukos">Spiros</a> and <a href="http://hugogiraudel.com/">Hugo Giraudel</a> among many others very inspiring people. I worked as UX researcher, digital designer and front-end developer. I learned the agile and component-based work-style and it triggered my love for beautiful, modern, accessible and user-oriented websites.</p>
 <p><a href="http://www.learn-accessibility.org/"><img class="aligncenter wp-image-2898 size-medium" src="{{ site.baseurl }}/assets/687474703a2f2f692e696d6775722e636f6d2f314f57707341552e706e67-388x400.png" alt="Learn Accessibility" width="388" height="400" /></a></p>

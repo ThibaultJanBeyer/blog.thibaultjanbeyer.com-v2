@@ -6,7 +6,7 @@
 name: Thibault Jan Beyer
 
 # Short bio or description (displayed in the header)
-description: Yet another blog on web, development, case-studies, works, design and art, culture, design, everyday life.
+description: works, design, development and random stuff
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
@@ -89,6 +89,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
+  - jekyll-autoprefixer
 
 # Exclude these files from your production _site
 exclude:

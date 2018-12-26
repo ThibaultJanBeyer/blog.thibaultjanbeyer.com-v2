@@ -1,13 +1,11 @@
 ---
 layout: post
 title: How to make a dorodango
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: After my last more technical tutorial, the typography guide you might want something…
+image: assets/shaping-ball-further-1.gif
+image_alt: Gif showing Thibault Jan Beyer making a dorodango
 ---
+
 <p>After my last more technical tutorial, the <a href="http://blog.thibaultjanbeyer.com/portfolio/quick-guide-to-web-typography/">typography guide</a> you might want something more relaxing. So, just for fun, I tried the art of dorodango, it’s extremely meditative, maybe it’s something you’ll appreciate doing to counteract your intense business life and enhance your well-being. It costs nothing and is easy to do, give it a shot.</p>
 <h2>What is dorodango?</h2>
 <p>So I stumbled upon this awesome video from <a href="https://vimeo.com/p2photo">P2 Photography</a> on <a href="http://www.dorodango.com/about.html">Bruce Gardner</a>, who is a <a href="https://en.wikipedia.org/wiki/Dorodango">dorodango</a> artist. Dorodango is a Japanese art form in which earth and water are molded to create a delicate shiny sphere, resembling a billiard ball. Here is <a href="https://vimeo.com/130927316">the video</a>:</p>

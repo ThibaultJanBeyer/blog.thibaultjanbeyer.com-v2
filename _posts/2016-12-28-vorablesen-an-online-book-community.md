@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Vorablesen, an Online Book Community
-excerpt: creating an online book community. My Role: Frontend-Developer, UX Design and UX Researcher.
+excerpt: creating an online book community. My Role, Frontend-Developer, UX Design and UX Researcher.
+image: assets/website.jpg
+image_alt: Vorablesen website concept
 ---
+
 <blockquote>Type: Professional<br />
 For: <a href="https://www.edenspiekermann.com/">Edenspiekermann_</a><br />
 My Role: Frontend-Developer, UX Design and UX Research<br />

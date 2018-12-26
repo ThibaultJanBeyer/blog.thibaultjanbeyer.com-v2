@@ -1,0 +1,52 @@
+.site-name {
+  background: linear-gradient(
+    center top,
+    transparent 0%,
+    transparent 96%,
+    #000 96%,
+    #000 98%,
+    transparent 98%,
+    transparent 100%
+  );
+  background: -moz-linear-gradient(
+    center top,
+    transparent 0%,
+    transparent 96%,
+    #000 96%,
+    #000 98%,
+    transparent 98%,
+    transparent 100%
+  );
+  display: inline-block;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0px -1px 0px white, 0px -2px 0px white, -1px 0px 0px white,
+    -2px 0px 0px white, 1px 0px 0px white, 2px 0px 0px white;
+
+  a {
+    color: $darkGray;
+  }
+
+  a:hover {
+    color: $gray;
+  }
+}
+
+.site-description {
+  color: $gray;
+  font-size: 1rem;
+  margin: 15px 0;
+  padding: 0;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  margin: 50px;
+  text-align: center;
+}
