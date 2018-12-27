@@ -1,0 +1,35 @@
+<div id="search-dialog">
+  <dialog aria-labelledby="dialog-title">
+    <div tabindex="-1" data-a11y-dialog-hide class="dialog-backdrop"></div>
+    <button type="button" class="dialog-close" data-a11y-dialog-hide aria-label="Close this dialog window">
+      &times;
+    </button>
+    <div class="dialog-content">
+
+      <h2 id="dialog-title">Search</h1>
+
+      <div class="search">
+        <input type="text" id="search-input" placeholder="search posts..">
+        <br/>
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<script src="{{ site.baseurl }}/plugins/dialog.js"></script>
+<script>
+const el = document.getElementById('search-dialog');
+const dialog = new A11yDialog(el);
+</script>
+<script src="https://unpkg.com/simple-jekyll-search@1.5.0/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{ site.baseurl }}/search.json',
+  searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+})
+</script>
+<br>
+<br>

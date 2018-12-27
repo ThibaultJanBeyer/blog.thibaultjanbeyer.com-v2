@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-
-    {% include meta.html %}
-    
-    <link rel="icon" href="{{ site.favicon }}">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    {% include adsense.html %}
-  </head>
-
+  {% include head.html %}
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
-
           <div class="site-info">
             <{% if page.title %}p{% else %}h1{% endif %} class="site-name">
               <a href="{{ site.baseurl }}/">{{ site.name }}</a>
@@ -30,10 +12,10 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <a href="#">Sidebar</a>
-            <a href="#">Search</a>
-            <a href="mailto:thibault.beyer@gmail.com?subject=Hi%20Thibault,%20I%20like%20what%20you%20do%20and%20want%20to%20talk%20to%20you%20about…">Contact</a>
+          <nav class="mainnav">
+            <button class="a" type="button" title="sidebar" class="mainnav-sidebar"><i class="fas fa-bars"></i></button>
+            <button class="a" type="button" title="search" data-a11y-dialog-show="search-dialog"><i class="fas fa-search"></i></button>
+            <a href="mailto:thibault.beyer@gmail.com?subject=Hi%20Thibault,%20I%20like%20what%20you%20do%20and%20want%20to%20talk%20to%20you%20about…" title="contact"><i class="far fa-envelope"></i></a>
           </nav>
         </header>
       </div>
@@ -51,6 +33,7 @@
       </div>
     </div>
 
+    {% include search-dialog.html %}
     {% include analytics.html %}
  
   </body>
