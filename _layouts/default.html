@@ -36,6 +36,11 @@
     {% include search-dialog.html %}
     {% include subscribe-dialog.html %}
     {% include analytics.html %}
+
+    <script>
+      if(location.href.indexOf('/portfolio') > -1)
+        location.href = location.href.replace(/\/portfolio/g, '');
+    </script>
  
   </body>
 </html>
