@@ -21,18 +21,18 @@ favicon: /images/favicon.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: thibault.beyer@gmail.com
-  facebook: https://www.facebook.com/Thibault.Jan.Beyer
+  email: # thibault.beyer@gmail.com
+  facebook: Thibault.Jan.Beyer
   flickr:
-  github: https://github.com/ThibaultJanBeyer
-  instagram: https://www.instagram.com/_01110100/
-  linkedin: https://www.linkedin.com/in/thibault-jan-beyer-96997a72/
-  pinterest: https://www.pinterest.de/ThibaultBeyer/
-  rss: Broomball # just type anything here for a working RSS icon
-  twitter: https://twitter.com/ThibaultBeyer
+  github: ThibaultJanBeyer
+  instagram: # _01110100
+  linkedin: thibault-jan-beyer-96997a72
+  pinterest: # ThibaultBeyer
+  rss: TJB # just type anything here for a working RSS icon
+  twitter: ThibaultBeyer
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: https://plus.google.com/+ThibaultJanBeyer # anything in your profile username that comes after plus.google.com/
+  googleplus: +ThibaultJanBeyer # anything in your profile username that comes after plus.google.com/
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
