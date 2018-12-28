@@ -14,5 +14,7 @@
   infScroll.on( 'append', function( response, path, items ) {
     console.log('appended', response, path, items);
     macy.recalculate();
+    setTimeout(() => macy.recalculateOnImageLoad(), 1000);
+    document.querySelector('.pagination').style.opacity = 0;
   });
 </script>

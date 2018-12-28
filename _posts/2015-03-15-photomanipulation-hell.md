@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photomanipulation "Hell"
-dexcerpt: I made this Photomanipulation during my first semester on the
+excerpt: I made this Photomanipulation during my first semester on the
 image: /assets/photo_hell4-e1426433957148.jpg
 image_alt: Photomanipulation Photoshop, Hell
 ---

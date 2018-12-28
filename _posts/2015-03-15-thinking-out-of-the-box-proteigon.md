@@ -2,7 +2,7 @@
 layout: post
 title: Thinking out of the Box – PROTEIGON
 excerpt: Directed by brilliant video artist Steven Briand
-image: /assets/https://blog.thibaultjanbeyer.com/wp-content/uploads/2014/03/Screen-Shot-2014-03-22-at-15.33.17.png
+image: /assets/Screen-Shot-2014-03-22-at-15.33.17.png
 image_alt: Thinking outside of the box
 ---
 
