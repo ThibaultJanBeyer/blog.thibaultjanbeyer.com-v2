@@ -8,7 +8,7 @@ image_alt: Cape Town view from the sky
 
 <p>So here we are, tonight I'm leaving Bonn and flying to cape town, south africa. Where I'll spend three-month at <a href="http://friendsofdesign.net/">a SummerSchool</a>. The course is called Print Design &amp; Digital Publishing which includes Layout Design Principles &amp; Techniques, Professional Practice, Finishing Art &amp; Cross media and one LIVE Project (with real clients I guess). I hope that I'll have enough spare time beside the school and the awesome activities I'm planning to keep you up to date about my adventure. Be sure to subscribe!</p>
 <p>So first off some piece of information about how to organize such a trip.</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-10-at-13.57.59.png"><img class="alignnone size-medium wp-image-1524" src="{{ site.baseurl }}/assets/Screen-Shot-2015-08-10-at-13.57.59-400x366.png" alt="Cape Town Map" width="400" height="366" /></a><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/08/CapeTown_Africa.jpg"> <img class="alignnone wp-image-1523 size-medium" src="{{ site.baseurl }}/assets/CapeTown_Africa-400x222.jpg" alt="Cape Town Air" width="400" height="222" /></a></p>
+<p><a href="/assets/Screen-Shot-2015-08-10-at-13.57.59.png"><img class="alignnone size-medium wp-image-1524" src="{{ site.baseurl }}/assets/Screen-Shot-2015-08-10-at-13.57.59-400x366.png" alt="Cape Town Map" width="400" height="366" /></a><a href="/assets/CapeTown_Africa.jpg"> <img class="alignnone wp-image-1523 size-medium" src="{{ site.baseurl }}/assets/CapeTown_Africa-400x222.jpg" alt="Cape Town Air" width="400" height="222" /></a></p>
 <h4>Checklist:</h4>
 <p><span class="Unicode">☑</span> Get a travel insurance.<br />
 <em> Probably the easiest part: just call your regular insurance</em>.<br />
@@ -27,5 +27,5 @@ image_alt: Cape Town view from the sky
 ☑ Kiss your Girlfriend.<br />
 </span></p>
 <p>You're ready to go!</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/08/2015-08-10-15.55.58.jpg"><img class="alignnone size-medium wp-image-1525" src="{{ site.baseurl }}/assets/2015-08-10-15.55.58-300x400.jpg" alt="2015-08-10 15.55.58" width="300" height="400" /></a></p>
+<p><a href="/assets/2015-08-10-15.55.58.jpg"><img class="alignnone size-medium wp-image-1525" src="{{ site.baseurl }}/assets/2015-08-10-15.55.58-300x400.jpg" alt="2015-08-10 15.55.58" width="300" height="400" /></a></p>
 <p>&nbsp;</p>

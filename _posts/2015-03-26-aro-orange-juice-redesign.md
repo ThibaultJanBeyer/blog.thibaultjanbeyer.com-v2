@@ -13,6 +13,6 @@ Skills: Packaging, PS</p></blockquote>
 <h5>The original packaging:</h5>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/aro_orangensaft_steige_mit_8_getraenkekortons_a_150l_kopie.jpg"><img class="alignnone wp-image-1217 size-medium" src="{{ site.baseurl }}/assets/aro_orangensaft_steige_mit_8_getraenkekortons_a_150l_kopie-300x225.jpg" alt="aro orange juice" width="300" height="225" /></a></p>
+<p><a href="/assets/aro_orangensaft_steige_mit_8_getraenkekortons_a_150l_kopie.jpg"><img class="alignnone wp-image-1217 size-medium" src="{{ site.baseurl }}/assets/aro_orangensaft_steige_mit_8_getraenkekortons_a_150l_kopie-300x225.jpg" alt="aro orange juice" width="300" height="225" /></a></p>
 <h5>The Redesign (right):</h5>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/Beyer-Thibault-Jan_NewLook_HSWS_1415.jpg"><img class="alignnone wp-image-1218 size-large" src="{{ site.baseurl }}/assets/Beyer-Thibault-Jan_NewLook_HSWS_1415-1003x1024.jpg" alt="redesign aro orange juice" width="809" height="826" /></a></p>
+<p><a href="/assets/Beyer-Thibault-Jan_NewLook_HSWS_1415.jpg"><img class="alignnone wp-image-1218 size-large" src="{{ site.baseurl }}/assets/Beyer-Thibault-Jan_NewLook_HSWS_1415-1003x1024.jpg" alt="redesign aro orange juice" width="809" height="826" /></a></p>

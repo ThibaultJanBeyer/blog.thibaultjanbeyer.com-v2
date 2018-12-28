@@ -14,7 +14,7 @@ Co-Workers: Angelika Würz, Jessica Bensch, Salome Lorena Thiel</p></blockquote>
 <p>– Create and market a pop-up book with respective merchandise.</p>
 <h2>Our Solution:</h2>
 <p>As we wanted to have sophisticated elements in our pop-up book, we decided to handcraft one about the experience of drugs. A lot of research went into how people react to which drug. Finally we chose to focus on a LSD trip and that is the Book we came up with:</p>
-<p>[video width="1632" height="1080" mp4="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/12/Der-Trip.mp4"][/video]</p>
+<p>[video](/assets/Der-Trip.mp4)</p>
 <p>As marketing Idea we came up with an interactive pwebsite pointing to the web-shop about the drug experience. <a href="http://kit.thibaultjanbeyer.com/trip/">Here is what I coded <i class="fa fa-rocket"></i></a>:</p>
 <p><a href="http://kit.thibaultjanbeyer.com/trip/"><img class="alignnone wp-image-2100 size-large" src="{{ site.baseurl }}/assets/Screen-Shot-2015-12-26-at-17.10.20-1024x558.png" alt="psychedelic website lsd trip" width="809" height="441" /></a></p>
 <p>and the <a href="http://kit.thibaultjanbeyer.com/trip/shop/">Webshop <i class="fa fa-rocket"></i></a> (<strong>with no functionality</strong> since it is just a concept mock up):</p>
@@ -39,7 +39,7 @@ Co-Workers: Angelika Würz, Jessica Bensch, Salome Lorena Thiel</p></blockquote>
 <h3>2. The Moiré Effect:</h3>
 <p><img class="alignnone size-full wp-image-2128" src="{{ site.baseurl }}/assets/muster_boden.png" alt="moire effect" width="900" height="658" /></p>
 <p>The Moiré Effect is a simple brain-hack – you might have heard of it as something you "don't want" and photographs hate it but I'm sure that you'll love this variant. When used right the well-known Moiré Effect is an optical illusion that let's you kind of animate you paper. Here is an example video of cool Moiré Effects:</p>
-<p>[video width="1280" height="720" mp4="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/12/Effet-moiré-animation-YouTube.mp4"][/video]</p>
+<p>[video](/assets/Effet-moiré-animation-YouTube.mp4)</p>
 <p>This as well is not that difficult to create. Print black bars with a distance of x from one bar to the next. Now let's say you have an animation of 3 Frames (thus 3 images) you'll have to cut the picture. Do it so that there is only one image of width x remaining for that frame. Repeat for frame 2 but x pixels more to the left. Repeat for the 3rd frame. Well it is easier to make than to explain. I've found <a href="http://www.instructables.com/id/2D-Moire-Slit-Animation/" target="_blank">a handy tutorial explaining</a> it. I bought <a href="http://www.amazon.de/Visual-Illusions-Motion-Moire-Screens/dp/0486295710/ref=sr_1_1?ie=UTF8&amp;qid=1431450698&amp;sr=8-1&amp;keywords=Visual+Illusions+in+Motion+with+Moir%C3%A9+Screens" target="_blank">this nice book</a> which is a collection of Moiré effects and this <a href="http://www.amazon.de/Theory-Moir%C3%A9-Phenomenon-Periodic-Computational-ebook/dp/B008BBQYIM/ref=sr_1_1?ie=UTF8&amp;qid=1431450673&amp;sr=8-1&amp;keywords=The+Theory+of+the+Moir%C3%A9+Phenomenon" target="_blank">book explaining the effect</a>. The same applies to round objects (as used in the toilet in our pop-up book):</p>
 <p><img class="alignnone size-large wp-image-2120" src="{{ site.baseurl }}/assets/round-2-1024x724.png" alt="round moire effect" width="809" height="572" /></p>
 <h3>3. Self-Animating images (illusory motion):</h3>
@@ -67,4 +67,4 @@ Co-Workers: Angelika Würz, Jessica Bensch, Salome Lorena Thiel</p></blockquote>
 <p><img class="alignnone size-full wp-image-2122" src="{{ site.baseurl }}/assets/error.png" alt="error" width="1191" height="400" /></p>
 <p>The last one is broken by the way, for the case you where wondering "oooh I see no animation on that one".</p>
 <p>Now you got new knowledge in your hands, use it wisely ;)</p>
-<p>[video width="1080" height="1080" mp4="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/12/sog_3_c.mp4"][/video]</p>
+<p>[video](/assets/sog_3_c.mp4)</p>

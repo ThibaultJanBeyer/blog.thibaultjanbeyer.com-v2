@@ -43,7 +43,7 @@ However, they all look alike. It is pretty hard to spot any difference - except 
 <p class="p1">There are several ways to get root. The easiest would be to just Brute-Force the Password as <a href="http://www.openwall.com/john/" target="_blank">John The Ripper</a> would do. Whereat this can take very long and you might be very thirsty, so better try to find the “shadow” document, It is where HåCKABEER saves its passwords. Those are encrypted, but to decrypt them should be child’s play.</p>
 <h3 class="p1">Is all this worth it? What’s the taste like?</h3>
 <p class="p1">Yes. It took centuries of expertise to create a beer like HåCKABEER, but it only takes an instant to fall under the spell of this full-bodied blond. Born out of the combination of three superior hop varieties, this beer provides the perfect balance between bitter and sweet. Hints of lemon and grapefruit complete this sense of harmony and in its own, special chalice, HåCKABEERs flavor and aroma will carry you away. Also, it is not just beer, it is a fully usable and fully customizable high technological microcomputer.</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/6c.png"><img class="alignnone wp-image-1208 size-large" src="{{ site.baseurl }}/assets/6c-1024x576.png" alt="HåCKABEER 3D Beer" width="809" height="455" /></a></p>
+<p><a href="/assets/6c.png"><img class="alignnone wp-image-1208 size-large" src="{{ site.baseurl }}/assets/6c-1024x576.png" alt="HåCKABEER 3D Beer" width="809" height="455" /></a></p>
 <p>&nbsp;</p>
 <h3 class="p1">The Logo</h3>
 <p class="p1">1. The iconic part of the Logo represents the Box itself in a very simplified 3D side view. This points out the unique style of the Beer. By being a rectangle and thus a basic form of design, while taking a very puristic approach, it compares to the ones and zeros in the electronic world.<br />
@@ -51,7 +51,7 @@ However, they all look alike. It is pretty hard to spot any difference - except 
 3. As Font I use the modern font FF DIN which fits the super modern product like a glove. The name HåCKABEER remembers the hackaton events where it is sold and it is what you do with it: hack a beer.<br />
 4. The black background is once again a reminder of the product – which is black. (The logo can however also be used without the black Background). It is very simple, very clean, very sexy and only uses two colors. That is again to refer to the ones and zeros used in computing but also to save printing costs.</p>
 <p>&nbsp;</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/4b.png"><img class="alignnone wp-image-1207 size-large" src="{{ site.baseurl }}/assets/4b-1024x576.png" alt="HåCKABEER 3D Beer" width="809" height="455" /></a></p>
+<p><a href="/assets/4b.png"><img class="alignnone wp-image-1207 size-large" src="{{ site.baseurl }}/assets/4b-1024x576.png" alt="HåCKABEER 3D Beer" width="809" height="455" /></a></p>
 <h3>Résumé</h3>
 <p>HåCKABEER is an outstanding and futuristic beer packaging concept. However, it is questionable if it is profitable due to  the high production price. So you shouldn’t just consider it to be just beer, it is also a fully usable and fully customizable high technological microcomputer.</p>
 <p class="p1">Take care! Thibault Jan Beyer<sup>TJB</sup></p>

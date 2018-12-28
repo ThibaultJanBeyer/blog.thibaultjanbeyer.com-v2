@@ -11,13 +11,13 @@ Semester: 3 (2014)<br />
 Skills: Scientific Work, Bookbinding, InDesign</p></blockquote>
 <p><iframe width="100%" height="400" src="//e.issuu.com/embed.html#16490985/12078021" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <h2 class="p1">Printed Book:</h2>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/1-cover.jpg"><img class="alignnone size-full wp-image-1407" src="{{ site.baseurl }}/assets/1-cover.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/detail1.png"><img class=" size-full wp-image-1412 aligncenter" src="{{ site.baseurl }}/assets/detail1.png" alt="Henri Matisse - Book" width="900px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/2-schmutz.jpg"><img class="alignnone size-full wp-image-1408" src="{{ site.baseurl }}/assets/2-schmutz.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/5-was-ist.jpg"><img class="alignnone size-full wp-image-1411" src="{{ site.baseurl }}/assets/5-was-ist.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/3-center.jpg"><img class="alignnone size-full wp-image-1409" src="{{ site.baseurl }}/assets/3-center.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/detail2.png"><img class=" size-full wp-image-1413 aligncenter" src="{{ site.baseurl }}/assets/detail2.png" alt="Henri Matisse - Book" width="900px" /></a></p>
-<p class="p1"><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/03/4-Matisse.jpg"><img class="alignnone size-full wp-image-1410" src="{{ site.baseurl }}/assets/4-Matisse.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
+<p class="p1"><a href="/assets/1-cover.jpg"><img class="alignnone size-full wp-image-1407" src="{{ site.baseurl }}/assets/1-cover.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
+<p class="p1"><a href="/assets/detail1.png"><img class=" size-full wp-image-1412 aligncenter" src="{{ site.baseurl }}/assets/detail1.png" alt="Henri Matisse - Book" width="900px" /></a></p>
+<p class="p1"><a href="/assets/2-schmutz.jpg"><img class="alignnone size-full wp-image-1408" src="{{ site.baseurl }}/assets/2-schmutz.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
+<p class="p1"><a href="/assets/5-was-ist.jpg"><img class="alignnone size-full wp-image-1411" src="{{ site.baseurl }}/assets/5-was-ist.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
+<p class="p1"><a href="/assets/3-center.jpg"><img class="alignnone size-full wp-image-1409" src="{{ site.baseurl }}/assets/3-center.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
+<p class="p1"><a href="/assets/detail2.png"><img class=" size-full wp-image-1413 aligncenter" src="{{ site.baseurl }}/assets/detail2.png" alt="Henri Matisse - Book" width="900px" /></a></p>
+<p class="p1"><a href="/assets/4-Matisse.jpg"><img class="alignnone size-full wp-image-1410" src="{{ site.baseurl }}/assets/4-Matisse.jpg" alt="Henri Matisse - Book" width="1000px" /></a></p>
 <p><em>Transcript:</em></p>
 <h2 class="p1">Die klassische Moderne Kunst und Henri Matisse</h2>
 <h3 class="p1">Was ist moderne Kunst?</h3>

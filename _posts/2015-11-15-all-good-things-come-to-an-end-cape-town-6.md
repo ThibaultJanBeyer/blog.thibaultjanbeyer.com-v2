@@ -84,9 +84,9 @@ It still could not have been better. It took us 3 Hours to get up and 1 Hour to 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>[video width="640" height="360" mp4="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/11/VID-20151115-WA0000.mp4"][/video]</p>
+<p>[video](/assets/VID-20151115-WA0000.mp4)</p>
 <p>We spend our last day with Rob and Andrew at the Trapolin Park <a href="http://www.rushsa.co.za/">Rush</a>. We ate out afterwards and spend some time playing Tennis in the Sun. Then. Headed back to good old cold Germany.</p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/11/IMG-20151115-WA0005-copy.jpg"><img class="alignnone size-large wp-image-2080" src="{{ site.baseurl }}/assets/IMG-20151115-WA0005-copy-768x1024.jpg" alt="sitting in the foam after a trampoline jump red black" width="768" height="1024" /></a></p>
+<p><a href="/assets/IMG-20151115-WA0005-copy.jpg"><img class="alignnone size-large wp-image-2080" src="{{ site.baseurl }}/assets/IMG-20151115-WA0005-copy-768x1024.jpg" alt="sitting in the foam after a trampoline jump red black" width="768" height="1024" /></a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>In german there is a saying that everything has an end, only the sausage has two. Here I am, back in Germany, but it is not all sad, I'm very happy to see my european friends again and exited hearing what they did and how they evolved while I was away. I'm also looking foreward for the next adventure which is soon to come!</p>

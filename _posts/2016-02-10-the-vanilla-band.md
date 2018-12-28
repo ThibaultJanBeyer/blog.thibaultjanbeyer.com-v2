@@ -39,7 +39,7 @@ Facebook:</p>
 <p><img class="wp-image-2206 size-medium aligncenter" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity21-400x283.jpg" alt="Kit Box" width="400" height="283" /></p>
 <p style="text-align: center;">The Vanilla Van – Kitbox Concept:</p>
 <p><img class="wp-image-2207 size-medium alignnone" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity22-400x283.jpg" alt="The Vanilla Van Preparations" width="400" height="283" /> <img class="alignnone size-medium wp-image-2208" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity23-400x283.jpg" alt="The Vanilla Van Preparations" width="400" height="283" /></p>
-<p>[video width="800" height="450" mp4="http://blog.thibaultjanbeyer.com/wp-content/uploads/2016/01/city_0000.mp4"][/video]</p>
+<p>[video](/assets/city_0000.mp4)</p>
 <p><img class="size-medium wp-image-2210 aligncenter" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity25-400x283.jpg" alt="Posters" width="400" height="283" /></p>
 <p><img class="alignnone size-full wp-image-2211" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity26.jpg" alt="Kirstenbosch The Vanilla Posters" width="842" height="595" /></p>
 <p><img class="alignnone size-full wp-image-2212" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity27.jpg" alt="The Vanilla Kirstenbosch Summer Concerts Poster idea 2" width="842" height="595" /></p>

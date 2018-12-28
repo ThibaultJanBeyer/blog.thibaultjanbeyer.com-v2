@@ -7,4 +7,4 @@ image_alt: Tiny hippo comic
 ---
 
 <p>I found this super cute comic on <a href="http://poorlydrawnlines.com/" target="_blank">http://poorlydrawnlines.com/</a></p>
-<p><a href="http://blog.thibaultjanbeyer.com/wp-content/uploads/2014/04/mbwuuVtolOTwMIuLLropnIojscHDOd7q8n6CV7lV_Hw.jpg"><img class="wp-image-626 size-full aligncenter" src="{{ site.baseurl }}/assets/mbwuuVtolOTwMIuLLropnIojscHDOd7q8n6CV7lV_Hw.jpg" alt="No one fucks with tiny hippo" width="960" height="685" /></a></p>
+<p><a href="/assets/mbwuuVtolOTwMIuLLropnIojscHDOd7q8n6CV7lV_Hw.jpg"><img class="wp-image-626 size-full aligncenter" src="{{ site.baseurl }}/assets/mbwuuVtolOTwMIuLLropnIojscHDOd7q8n6CV7lV_Hw.jpg" alt="No one fucks with tiny hippo" width="960" height="685" /></a></p>
