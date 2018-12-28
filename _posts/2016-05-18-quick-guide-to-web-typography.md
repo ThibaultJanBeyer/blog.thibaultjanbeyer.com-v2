@@ -2,7 +2,7 @@
 layout: post
 title: Quick Guide to web typography
 excerpt: Typography is probably the most overlooked thing when developing for the web. However,…
-image: assets/choose-font.gif
+image: /assets/choose-font.gif
 image_alt: Choose the right font
 ---
 

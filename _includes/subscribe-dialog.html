@@ -1,0 +1,38 @@
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+<div id="subscribe-dialog">
+  <dialog aria-labelledby="dialog-title">
+    <div tabindex="-1" data-a11y-dialog-hide class="dialog-backdrop"></div>
+    <button type="button" class="dialog-close" data-a11y-dialog-hide aria-label="Close this dialog window">
+      &times;
+    </button>
+    <div class="dialog-content">
+
+      <h2 id="dialog-title" class="dialog-title">Subscribe to<br>the mailing list</h2>
+
+      <div class="subscribe-form">
+        <div id="mc_embed_signup">
+        <form action="https://thibaultjanbeyer.us7.list-manage.com/subscribe/post?u=8e617db02f60b6b057be1d7dd&amp;id=e80af672f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8e617db02f60b6b057be1d7dd_e80af672f8" tabindex="-1" value=""></div>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </dialog>
+</div>
+
+<script src="{{ site.baseurl }}/plugins/dialog.js"></script>
+<script>
+(() => {
+  const el = document.getElementById('subscribe-dialog');
+  const dialog = new A11yDialog(el);
+  const form = document.getElementById('mc-embedded-subscribe-form');
+  form.addEventListener('submit', e => dialog.hide());
+})();
+</script>

@@ -65,6 +65,8 @@ paginate: 6
 
 permalink: /:title/
 
+mailchimp-list: //redgadgets.us10.list-manage.com/subscribe/post?u=210acce5db69d3d4a04b0e25d&amp;id=08c6708f40"
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 

@@ -54,22 +54,7 @@ dialog {
   margin: 0;
   text-align: center;
   background: transparent;
-}
-
-#search-input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid $red;
-  color: white;
-  font-size: 2rem;
-  margin: 20px 0 10px;
-  opacity: 0.6;
-  transition: opacity 300ms ease-in-out;
-
-  &:focus {
-    opacity: 1;
-  }
+  text-shadow: none;
 }
 
 #results-container {

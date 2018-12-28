@@ -2,7 +2,7 @@
 layout: post
 title: Building an interactive SPA for BMW
 excerpt: Here is a free origami stile font for y’all
-image: assets/dealer-locator-bmw-angular-1024x563.png
+image: /assets/dealer-locator-bmw-angular-1024x563.png
 image_alt: BMW Dealer Locator preview
 ---
 

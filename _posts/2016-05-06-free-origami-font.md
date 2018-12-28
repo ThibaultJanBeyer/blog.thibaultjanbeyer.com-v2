@@ -2,7 +2,7 @@
 layout: post
 title: Free origami font
 excerpt: Here is a free origami stile font for y’all
-image: assets/paperfold-type.png
+image: /assets/paperfold-type.png
 image_alt: Hey everyone, due to the lack of time I will be very brief:…
 ---
 

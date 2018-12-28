@@ -2,7 +2,7 @@
 layout: post
 title: Vorablesen, an Online Book Community
 excerpt: creating an online book community. My Role, Frontend-Developer, UX Design and UX Researcher.
-image: assets/website.jpg
+image: /assets/website.jpg
 image_alt: Vorablesen website concept
 ---
 

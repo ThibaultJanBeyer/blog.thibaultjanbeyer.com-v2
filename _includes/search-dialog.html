@@ -6,7 +6,7 @@
     </button>
     <div class="dialog-content">
 
-      <h2 id="dialog-title">Search</h1>
+      <h2 id="dialog-title" class="dialog-title">Search</h2>
 
       <div class="search">
         <input type="text" id="search-input" placeholder="search posts..">
@@ -19,8 +19,10 @@
 
 <script src="{{ site.baseurl }}/plugins/dialog.js"></script>
 <script>
-const el = document.getElementById('search-dialog');
-const dialog = new A11yDialog(el);
+(() => {
+  const el = document.getElementById('search-dialog');
+  const dialog = new A11yDialog(el);
+})();
 </script>
 <script src="https://unpkg.com/simple-jekyll-search@1.5.0/dest/simple-jekyll-search.min.js"></script>
 <script>
@@ -31,5 +33,3 @@ SimpleJekyllSearch({
   searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
 })
 </script>
-<br>
-<br>

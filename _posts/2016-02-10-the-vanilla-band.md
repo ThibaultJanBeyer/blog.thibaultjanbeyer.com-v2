@@ -2,7 +2,7 @@
 layout: post
 title: The Vanilla Band
 excerpt: Our last project in South Africa, a local band called the vanilla approached us wanting a design for their b(r)and
-image: assets/TJB-TheVanilla_Identity20.jpg
+image: /assets/TJB-TheVanilla_Identity20.jpg
 image_alt: Vanilla Band CD
 ---
 

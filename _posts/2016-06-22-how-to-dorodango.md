@@ -2,7 +2,7 @@
 layout: post
 title: How to make a dorodango
 excerpt: After my last more technical tutorial, the typography guide you might want something…
-image: assets/shaping-ball-further-1.gif
+image: /assets/shaping-ball-further-1.gif
 image_alt: Gif showing Thibault Jan Beyer making a dorodango
 ---
 

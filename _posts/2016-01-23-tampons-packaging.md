@@ -2,7 +2,7 @@
 layout: post
 title: Tampons Packaging
 excerpt: In need of a real challenge, I choose to redesign the Ava Secrets tampon’s packaging
-image: assets/6.jpg
+image: /assets/6.jpg
 image_alt: Ava Secrets Tampon Packaging
 ---
 

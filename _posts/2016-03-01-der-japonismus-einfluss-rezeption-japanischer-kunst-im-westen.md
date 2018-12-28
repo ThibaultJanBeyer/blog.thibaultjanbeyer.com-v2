@@ -2,7 +2,7 @@
 layout: post
 title: Japonismus – Einfluss & Rezeption japanischer Kunst
 excerpt: A presentation I held last year on the japonism and its influence on western artists
-image: assets/2907_Japosnismus-Pra%CC%88si_v1.jpg
+image: /assets/2907_Japosnismus-Pra%CC%88si_v1.jpg
 image_alt: Japonism Japanese Art
 ---
 

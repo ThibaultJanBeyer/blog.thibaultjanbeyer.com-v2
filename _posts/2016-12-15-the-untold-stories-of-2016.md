@@ -2,7 +2,7 @@
 layout: post
 title: The untold stories of 2016
 excerpt: Hello dear reader, this year happened so much, that I did not find…
-image: assets/IMG_20161215_123147-400x300.jpg
+image: /assets/IMG_20161215_123147-400x300.jpg
 image_alt: Books
 ---
 

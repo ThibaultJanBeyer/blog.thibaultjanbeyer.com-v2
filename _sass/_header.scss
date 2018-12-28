@@ -65,11 +65,9 @@
   padding-bottom: 30px;
 }
 
-.mainnav-sidebar::before {
+.mainnav-subscribe::before {
   content: "";
-  background: transparent
-    url("http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/08/subscribe2.png")
-    no-repeat scroll 0% 0%;
+  background: transparent url("/assets/subscribe2.png") no-repeat scroll 0% 0%;
   background-size: contain;
   width: 50px;
   height: 50px;
