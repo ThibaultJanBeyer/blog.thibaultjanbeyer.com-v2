@@ -1,0 +1,65 @@
+.post {
+  background: white;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  break-inside: avoid;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  blockquote {
+    margin: 1.5rem 0;
+    border: 1px solid #ebebeb;
+    border-left: 5px solid $red;
+    padding: 1.5rem 1.5rem 1rem 3.5rem;
+    color: $gray;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      font-style: normal;
+      content: "\f1ea";
+      color: #ebebeb;
+      display: inline-block;
+      font-size: 25px;
+      line-height: 1;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.post-title {
+  color: $darkGray;
+  margin-top: 10px;
+}
+
+.postview {
+  padding: 45px 60px;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: auto;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.entry {
+  margin-bottom: 100px;
+}

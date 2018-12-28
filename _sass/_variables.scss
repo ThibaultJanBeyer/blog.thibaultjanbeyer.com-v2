@@ -5,6 +5,8 @@
 // Colors
 $blue: #96ddfb;
 $red: #ed1c24;
+$green: palegreen;
+$gold: gold;
 
 // Grays
 $black: #000;
@@ -24,6 +26,13 @@ $georgia: Georgia, serif;
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+// Mobile breakpoints
+@mixin large {
+  @media screen and (min-width: 1400px) {
     @content;
   }
 }

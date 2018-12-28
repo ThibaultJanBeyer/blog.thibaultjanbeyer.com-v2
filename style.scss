@@ -9,6 +9,10 @@
 @import "typo";
 @import "header";
 @import "dialog";
+@import "posts";
+@import "links-hilite";
+@import "footer";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -16,7 +20,7 @@
 /**************/
 
 html {
-  font-size: 100%;
+  background: #f6f6f6;
 }
 
 .container {
@@ -24,17 +28,9 @@ html {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-}
 
-.a,
-a {
-  color: $blue;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    color: $blue;
+  @include large {
+    max-width: 1000px;
   }
 }
 
@@ -64,23 +60,28 @@ ol ul {
   list-style-type: circle;
 }
 
-em,
-i {
-  font-style: italic;
-}
-
-strong,
-b {
-  font-weight: bold;
-}
-
 img {
   max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+.alignright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignnone {
 }
 
 .date {
@@ -88,80 +89,6 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em 0.8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
 @import "svg-icons";

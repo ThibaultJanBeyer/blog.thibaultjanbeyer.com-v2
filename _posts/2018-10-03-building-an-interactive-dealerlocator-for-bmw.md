@@ -6,14 +6,15 @@ image: assets/dealer-locator-bmw-angular-1024x563.png
 image_alt: BMW Dealer Locator preview
 ---
 
-<blockquote>Type: Professional
-For: BMW Digital
-My Role: Frontend-Developer
+<blockquote>Type: Professional<br>
+For: BMW Digital<br>
+My Role: Frontend-Developer<br>
 Languages: HTML, SCSS, JavaScript (Angular)</blockquote>
 During my time at Hi-ReS! I worked on BMW Digital Stage 2. While it was very interesting to writing new components and improving old components for the general BMW Websites and Shops. I learned to work on a large-scale company with a gigantic scale client (BMW has over 25 Markets including right to left languages such as Arabic) which was very interesting.
 
 The most rewarding part however was to write<span class="background-details"> their new single page application called “Dealer Locator” using AngularJS Framework. I teamed up with <a href="http://www.frankleue.de/">Frank Leue</a>. Together, we created the <a href="https://www.bmw.de/de/fastlane/bmw-partner.html#/dlo/DE/de/BMW_BMWM">Dealer Locator</a>, a rich single page application written in Angular which helps customer find the nearest BMW dealer with ease</span>. We had a<span class="background-details"> strong focus on simplicity and user experience. Users can search for BMW dealers based on their location, on the dealers name or just by using the map. They can start a navigation, call the dealer directly, set it as their favorite, and filter the search by specific features. The user can also share url links that are direct pointers to any place in the app.
 </span>
+
 <ul>
  	<li><span class="background-details">Works perfectly on any screen size &amp; browser (IE9)
 </span></li>

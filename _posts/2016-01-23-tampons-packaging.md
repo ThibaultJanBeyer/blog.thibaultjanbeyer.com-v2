@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Tampons Packaging
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: In need of a real challenge, I choose to redesign the Ava Secrets tampon’s packaging
+image: assets/6.jpg
+image_alt: Ava Secrets Tampon Packaging
 ---
+
 <blockquote>Type: University South Africa<br />
 Semester: 5 (2015)<br />
 Skills: Illustrator, Packaging</p></blockquote>

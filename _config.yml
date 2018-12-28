@@ -56,7 +56,8 @@ url: http://thibaultjanbeyer.github.io/
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: /blog.thibaultjanbeyer.com-v2
+# baseurl: /
+paginate: 6
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -81,8 +82,6 @@ kramdown:
 sass:
   sass_dir: ./_sass
   style: :expanded # You might prefer to minify using :compressed
-
-paginate: 5
 
 # Use the following plug-ins
 plugins:

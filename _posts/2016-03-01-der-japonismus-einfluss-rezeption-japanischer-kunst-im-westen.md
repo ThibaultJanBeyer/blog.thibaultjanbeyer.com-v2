@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Japonismus – Einfluss & Rezeption japanischer Kunst
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: A presentation I held last year on the japonism and its influence on western artists
+image: assets/2907_Japosnismus-Pra%CC%88si_v1.jpg
+image_alt: Japonism Japanese Art
 ---
+
 <p align="LEFT">A presentation I held last year on the japonism and its influence on western artists.<br />
 The content is (beside litle internet research) mostly based on a book from Tayfun Belgin, John House, Axel Rüger, Kris Schiermeier and Hiroko Yokomizo titeled "Der Japonismus und die Geburt der Moderne: Die Kunst der Meiji-Zeit. Die Khalili-Sammlung".</p>
 <p align="LEFT">The Presentation is in German. Sorry for that. A translation will follow if requested.</p>

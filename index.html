@@ -1,9 +1,10 @@
 ---
 layout: default
 title: My Blog
+home: true
 ---
 
-<div class="posts">
+<div class="posts" id="posts">
   {% for post in paginator.posts %}
     <article class="post">
       
@@ -16,7 +17,12 @@ title: My Blog
       </a>
       {% endif %}
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h3 class="h3">
+        <a class="post-title"
+          href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h3>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -45,3 +51,5 @@ title: My Blog
     <span class="next ">Next</span>
   {% endif %}
 </div>
+
+{% include infinite-scroll-masonry.html %}

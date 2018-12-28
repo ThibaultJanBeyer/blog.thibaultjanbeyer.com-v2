@@ -1,13 +1,11 @@
 ---
 layout: post
 title: The Vanilla Band
-author:
-  login: Thibault Jan Beyer
-  email: hi@thibaultjanbeyer.com
-  display_name: Thibault Jan Beyer
-  first_name: Thibault Jan
-  last_name: Beyer
+excerpt: Our last project in South Africa, a local band called the vanilla approached us wanting a design for their b(r)and
+image: assets/TJB-TheVanilla_Identity20.jpg
+image_alt: Vanilla Band CD
 ---
+
 <blockquote>Type: University South Africa<br />
 Semester: 5 (2015)<br />
 Skills: Concept, 3D, Print, InDesign, Illustrator, Web, HTML, CSS, JavaScript</p></blockquote>
