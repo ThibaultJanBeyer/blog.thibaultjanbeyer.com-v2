@@ -19,9 +19,9 @@ Skills: Concept, 3D, Print, InDesign, Illustrator, Web, HTML, CSS, JavaScript</p
 <p><img class="alignnone size-full wp-image-2190" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity5.jpg" alt="The Vanilla new logo brand after" width="842" height="595" /></p>
 <p style="text-align: center;">New, better Colors</p>
 <p><img class="alignnone size-full wp-image-2191" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity6.jpg" alt="The Vanilla logo before after" width="842" height="595" /></p>
-<p><a href="http://kit.thibaultjanbeyer.com/clients/vanilla/"><img class="aligncenter wp-image-2216 size-medium" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity31-400x283.jpg" alt="Website" width="400" height="283" /></a></p>
-<p style="text-align: center;"><a href="http://kit.thibaultjanbeyer.com/clients/vanilla/" target="_blank">Visit the Website <i class="fa fa-rocket"></i></a></p>
-<p><a href="http://kit.thibaultjanbeyer.com/clients/vanilla/" rel="attachment wp-att-2217"><img class="alignnone size-full wp-image-2217" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity32.jpg" alt="The Vanilla Website" width="842" height="595" /></a></p>
+<p><a href="https://thibaultjanbeyer.github.io/the-vanilla-band/"><img class="aligncenter wp-image-2216 size-medium" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity31-400x283.jpg" alt="Website" width="400" height="283" /></a></p>
+<p style="text-align: center;"><a href="https://thibaultjanbeyer.github.io/the-vanilla-band/" target="_blank">Visit the Website <i class="fa fa-rocket"></i></a></p>
+<p><a href="https://thibaultjanbeyer.github.io/the-vanilla-band/" rel="attachment wp-att-2217"><img class="alignnone size-full wp-image-2217" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity32.jpg" alt="The Vanilla Website" width="842" height="595" /></a></p>
 <p><img class="wp-image-2192 size-medium aligncenter" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity7-400x283.jpg" alt="TJB-TheVanilla_Identity7" width="400" height="283" /></p>
 <p><img class="alignnone size-full wp-image-2193" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity8.jpg" alt="The Vanilla Fanshirt" width="842" height="595" /></p>
 <p><img class="alignnone size-full wp-image-2195" src="{{ site.baseurl }}/assets/TJB-TheVanilla_Identity10.jpg" alt="The Vanilla Album Shirt" width="842" height="595" /></p>

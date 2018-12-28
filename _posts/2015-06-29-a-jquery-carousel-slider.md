@@ -12,7 +12,7 @@ Year: 2015</p></blockquote>
 <p>Here you go, my first tool on <a href="https://github.com/ThibaultJanBeyer/carousel-slider.js">Github</a>. Just another slider :)<br />
 The Carousel Slider. Please let me know what awesome project you build with it. It’s free for everyone.</p>
 <p>The slider has a lot of great features like being touch responsive, working with the keyboard keys, being full responsive, the ease to use, the possibility to add several sliders anywhere, even on the same page and sliders containing sliders and much more – but what makes it really unique is that there is no need of disturbing navigation arrows! However, if you want some, you can add them with ease of course. Now I’m working on it to be full javascript without jquery dependence and also make it 100% accessible for disabled users. I would say that as for now, the only thing you need to know to be able to operate it is html.</p>
-<p>Check out my <a href="http://kit.thibaultjanbeyer.com/tools/carousel-slider.js/" target="_blank">Carousel Slider <i class="fa fa-rocket"></i></a> or view it on <a href="https://github.com/ThibaultJanBeyer/carousel-slider.js" target="_blank">GitHub <i class="fa fa-github-alt"></i></a></p>
+<p>Check out my <a href="http://thibaultjanbeyer.github.io/carousel-slider.js/" target="_blank">Carousel Slider <i class="fa fa-rocket"></i></a> or view it on <a href="https://github.com/ThibaultJanBeyer/carousel-slider.js" target="_blank">GitHub <i class="fa fa-github-alt"></i></a></p>
 <div class="carousel-slider" style="float: right; margin: 10px;" data-width="20vw" data-height="25vh">
 <div class="inner">
 <div class="slide" style="background: #e74c3c; padding: 20px;">

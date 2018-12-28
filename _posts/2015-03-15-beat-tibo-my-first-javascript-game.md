@@ -55,4 +55,4 @@ Skills: JavaScript, HTML, CSS</p>
 <p>&nbsp;</p>
 <p>Yah so the code is basically like: question - if true - text - wait - then next question - if else - other text - wait - other question.</p>
 <p>you can check out the <em>html</em> and <em>css</em> on page. <i class="hilite">At least the design rocks</i> ;)</p>
-<p>Ok enough talking <a href="http://kit.thibaultjanbeyer.com/old_pages/index_v7/work/lab/javascript/bt" target="_blank">go to the game</a>.</p>
+<p>Ok enough talking <a href="https://thibaultjanbeyer.github.io/thibaultjanbeyer.com-v7/work/lab/javascript/bt" target="_blank">go to the game</a>.</p>

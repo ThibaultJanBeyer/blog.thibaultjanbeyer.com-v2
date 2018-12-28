@@ -15,10 +15,10 @@ Co-Workers: Angelika Würz, Jessica Bensch, Salome Lorena Thiel</p></blockquote>
 <h2>Our Solution:</h2>
 <p>As we wanted to have sophisticated elements in our pop-up book, we decided to handcraft one about the experience of drugs. A lot of research went into how people react to which drug. Finally we chose to focus on a LSD trip and that is the Book we came up with:</p>
 <p>[video](/assets/Der-Trip.mp4)</p>
-<p>As marketing Idea we came up with an interactive pwebsite pointing to the web-shop about the drug experience. <a href="http://kit.thibaultjanbeyer.com/trip/">Here is what I coded <i class="fa fa-rocket"></i></a>:</p>
-<p><a href="http://kit.thibaultjanbeyer.com/trip/"><img class="alignnone wp-image-2100 size-large" src="{{ site.baseurl }}/assets/Screen-Shot-2015-12-26-at-17.10.20-1024x558.png" alt="psychedelic website lsd trip" width="809" height="441" /></a></p>
-<p>and the <a href="http://kit.thibaultjanbeyer.com/trip/shop/">Webshop <i class="fa fa-rocket"></i></a> (<strong>with no functionality</strong> since it is just a concept mock up):</p>
-<p><a href="http://kit.thibaultjanbeyer.com/trip/shop/"><img class="alignnone wp-image-2101 size-large" src="{{ site.baseurl }}/assets/The-Trip-Shop-&#8211;-just-another-psychedelic-shop-2015-12-26-17-12-51-718x1024.png" alt="Trip Shop psychedelic shop" width="718" height="1024" /></a></p>
+<p>As marketing Idea we came up with an interactive pwebsite pointing to the web-shop about the drug experience. <a href="https://thibaultjanbeyer.github.io/the-trip/">Here is what I coded <i class="fa fa-rocket"></i></a>:</p>
+<p><a href="https://thibaultjanbeyer.github.io/the-trip/"><img class="alignnone wp-image-2100 size-large" src="{{ site.baseurl }}/assets/Screen-Shot-2015-12-26-at-17.10.20-1024x558.png" alt="psychedelic website lsd trip" width="809" height="441" /></a></p>
+<p>and the <a href="https://thibaultjanbeyer.github.io/the-trip/shop/">Webshop <i class="fa fa-rocket"></i></a> (<strong>with no functionality</strong> since it is just a concept mock up):</p>
+<p><a href="https://thibaultjanbeyer.github.io/the-trip/shop/"><img class="alignnone wp-image-2101 size-large" src="{{ site.baseurl }}/assets/The-Trip-Shop-&#8211;-just-another-psychedelic-shop-2015-12-26-17-12-51-718x1024.png" alt="Trip Shop psychedelic shop" width="718" height="1024" /></a></p>
 <h2>Progress:</h2>
 <p>Since we wanted to come up with fancy special effects that work on paper, beside complex paperwork and illustrations, I decided to dig deep into optical illusions and taught myself to understand and create 3 kind of optical illusions:</p>
 <ol>
