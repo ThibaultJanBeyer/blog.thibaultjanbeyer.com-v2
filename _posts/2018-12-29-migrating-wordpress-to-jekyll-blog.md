@@ -106,7 +106,7 @@ Well here is the catch. The related posts by Jekyll are not really related to th
 <ul class="related_posts">
   {{ "{% for post in site.related_posts limit: 4 "}} %} 
   {{ "{% if forloop.index > 2 "}} %} 
-  {{ "{% assign random = site.time | date: "%s%N" | modulo: site.posts.size "}} %}
+  {{ "{% assign random = site.time | date: '%s%N' | modulo: site.posts.size "}} %}
   {{ "{% assign post = site.posts[random] "}} %}
   {{ "{% endif "}} %}
   <li class="related_post">
