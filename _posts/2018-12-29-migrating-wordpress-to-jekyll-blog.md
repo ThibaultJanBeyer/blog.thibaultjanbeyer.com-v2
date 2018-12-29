@@ -104,11 +104,10 @@ Well here is the catch. The related posts by Jekyll are not really related to th
 
 ```html
 <ul class="related_posts">
-  {{ "{% for post in site.related_posts limit: 4 "}} %} 
-  {{ "{% if forloop.index > 2 "}} %} 
-  {{ "{% assign random = site.time | date: '%s%N' | modulo: site.posts.size "}} %}
-  {{ "{% assign post = site.posts[random] "}} %}
-  {{ "{% endif "}} %}
+  {{ "{% for post in site.related_posts limit: 4 "}} %} {{ "{% if forloop.index
+  > 2 "}} %} {{ "{% assign random = site.time | date: '%s%N' | modulo:
+  site.posts.size "}} %} {{ "{% assign post = site.posts[random] "}} %} {{ "{%
+  endif "}} %}
   <li class="related_post">
     <a href="{{ post.url }}">
       {{ "{% if post.image "}} %}
@@ -140,7 +139,7 @@ Disqus even offers a possibility to [import your wordpress comments](https://hel
 
 So on Wordpress, the url for posts was `/portfolio/post`. However with Jekyll the path is now `/post` without the portfolio part. Since Jekyll does not run on any server, you have two options for redirects.  
 Either you set up redirect on your domain name provider or you use some Javascript hack.  
-I choose to go with the hack and here is the straight forward snipped I used:
+I chose to setup a [permanent redirect on cloudflare](https://support.cloudflare.com/hc/en-us/articles/200172286-How-do-I-perform-URL-forwarding-or-redirects-with-Cloudflare-) but you can also go with the frontend hack and here is the straight forward snipped to used:
 
 ```javascript
 if (location.href.indexOf("/portfolio/") > -1)
