@@ -13,6 +13,7 @@
 @import "related";
 @import "forms";
 @import "links-hilite";
+@import "syntax-hilite";
 @import "footer";
 
 // Syntax highlighting @import is at the bottom of this file
@@ -27,7 +28,7 @@ html {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 

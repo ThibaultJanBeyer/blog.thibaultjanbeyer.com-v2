@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700i|Playfair+Display:700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700i|Fira+Mono:400|Playfair+Display:700,700i");
 
 html,
 body {
@@ -27,7 +27,6 @@ span {
   -moz-font-feature-settings: "liga=1, kern=1";
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  font-family: "Fira Sans", sans-serif;
   letter-spacing: -0.005rem;
   text-rendering: optimizeLegibility;
 }
