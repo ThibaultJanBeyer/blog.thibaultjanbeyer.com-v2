@@ -15,6 +15,16 @@ a {
 .postview a {
   cursor: pointer;
   color: $black;
+  background: $blue;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 45%,
+    $blue 45%,
+    $blue 58%,
+    rgba(0, 0, 0, 0) 58%,
+    rgba(0, 0, 0, 0) 100%
+  );
   background: linear-gradient(
     top,
     rgba(0, 0, 0, 0) 0%,
