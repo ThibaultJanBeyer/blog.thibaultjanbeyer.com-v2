@@ -29,7 +29,7 @@ A real world example of a Stack would be a PEZ Dispenser (if you don’t know wh
 <p><img class="aligncenter size-full"
   src="{{ site.baseurl }}/assets/event-loop/PEZ-dispenser-star-wars.png"
   alt="Star Wars PEZ dispenser"
-  height="300"
+  style="height: 300px"
 /></p>
 
 ## What is a Queue ?
@@ -40,7 +40,6 @@ There are plenty real world examples of a queues. For example when you do your g
 <p><img class="aligncenter size-full"
   src="{{ site.baseurl }}/assets/event-loop/People-waiting-in-line-with-shopping-baskets-at-grocery-store.jpg"
   alt="People waiting in line at a grocery store"
-  height="300"
 /></p>
 
 ## 1. The Call Stack
