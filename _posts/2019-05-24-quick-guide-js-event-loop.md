@@ -79,7 +79,7 @@ Are handling the asynchronous operations, they are responsible to hold timeouts,
 ## 3. The Message Queue
 
 When we use an asynchronous method, the web-api will take care of it’s delay time and place it into the queue as soon as it is resolved.  
-When the Call Stack is empty, the message queue is resolved. <i class="hilite">The message queue can not interrupt the call stack that is what people mean when they speak about JavaScript being **“non blocking”**</i>.
+When the Call Stack is empty, the message queue is resolved.
 
 Lets consider this example:
 
