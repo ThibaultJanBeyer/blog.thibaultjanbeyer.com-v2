@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TL;DR JavaScript Event Loop (Browser)
-excerpt: A quick guide on the JavaScript and NodeJS event loop. What it is, explained in a nutshell.
-image: /assets/turbo-javascript-event-loop-roller-coaster.jpg
+title: A Quick guide to the JavaScript Event Loop (Browser)
+excerpt: TL;DR ! The JavaScript event loop. What is it? Explained in a nutshell.
+image: /assets/event-loop/turbo-javascript-event-loop-roller-coaster.jpg
 image_alt: A picture of a looping on a roller coaster ride with a big sign reading Turbo
 ---
 
@@ -36,9 +36,9 @@ There are plenty real world examples of a queues. For example when you do your g
 
 You JavaScript code will be parsed one after another and added to the Stack. Let’s suppose you have following code:
 
-```JavaScript
+```javascript
 function foo() {
-  return 1+1;
+  return 1 + 1;
 }
 
 function bar() {
@@ -83,33 +83,33 @@ When the Call Stack is empty, the message queue is resolved. <i class="hilite">T
 
 Lets consider this example:
 
-```JavaScript
+```javascript
 console.log(1);
 
 setTimeout(function callback() {
   console.log(3);
-}, 5000)
+}, 5000);
 
 console.log(2);
 ```
 
 For comparison I will represent the Web API as brackets `()` and the queue like this `<>`. This is by no means how a queue or api looks like.
 
-- Start code: `[main()]` | `()` | `<>`.
-- Push `console.log(1)` to the stack: `[log(1), main()]` | `()` | `<>`.
-- Pop (resolve) `console.log(1)` from the stack: `[main()]` => log 1 | `()` | `<>`.
-- Give `setTimeout` to the Web API: `[main()]` | `(setTimeout[5s])` | `<>`.
-- Push `console.log(2)` to the stack: `[log(2), main()]` | `(setTimeout[5s])` | `<>`.
-- Pop (resolve) `console.log(2)` from the stack: `[main()]` => log 2 | `(setTimeout[5s])` | `<>`.
-- Pop (resolve) `main` from the stack: `[]` | `()` | `<>`.
+- Start code: `[main()]` / `()` / `<>`.
+- Push `console.log(1)` to the stack: `[log(1), main()]` / `()` / `<>`.
+- Pop (resolve) `console.log(1)` from the stack: `[main()]` => log 1 / `()` / `<>`.
+- Give `setTimeout` to the Web API: `[main()]` / `(setTimeout[5s])` / `<>`.
+- Push `console.log(2)` to the stack: `[log(2), main()]` / `(setTimeout[5s])` / `<>`.
+- Pop (resolve) `console.log(2)` from the stack: `[main()]` => log 2 / `(setTimeout[5s])` / `<>`.
+- Pop (resolve) `main` from the stack: `[]` / `()` / `<>`.
 - Exit the stack
-- The Web API timeout is over. It enqueues the `callback` function to the Message Queue: `[]` | `()` | `<callback()>`.
-- _As the Stack is empty_, the message queue is processes and dequeues `callback` by pushing it to the Stack: `[callback()]` | `()` | `<>`.
-- Push `console.log(3)` to the stack: `[log(3), callback()]` | `()` | `<>`.
-- Pop (resolve) `console.log(3)` from the stack: `[callback()]` => log 3 | `()` | `<>`.
-- Pop (resolve) `callback` from the stack: `[]` | `()` | `<>`.
+- The Web API timeout is over. It enqueues the `callback` function to the Message Queue: `[]` / `()` / `<callback()>`.
+- _As the Stack is empty_, the message queue is processes and dequeues `callback` by pushing it to the Stack: `[callback()]` / `()` / `<>`.
+- Push `console.log(3)` to the stack: `[log(3), callback()]` / `()` / `<>`.
+- Pop (resolve) `console.log(3)` from the stack: `[callback()]` => log 3 / `()` / `<>`.
+- Pop (resolve) `callback` from the stack: `[]` / `()` / `<>`.
 - Exit the stack
-- The queue is empty: `[]` | `()` | `<>`.
+- The queue is empty: `[]` / `()` / `<>`.
 - Exit the queue
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
