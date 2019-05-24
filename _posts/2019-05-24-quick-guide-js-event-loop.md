@@ -62,16 +62,26 @@ bar();
 
 Considering our representation above, this is what would happen when executing the code:
 
-- Start code: `[main()]`.
-- Push `bar()` to the stack: `[bar(), main()]`.
-- Push `console.log(1)` to the stack: `[log(1), bar(), main()]`.
-- Pop (resolve) `console.log(1)` from the stack: `[bar(), main()]`. => log 1
-- Push `foo()` to the stack: `[foo(), bar(), main()]`.
-- Pop (resolve) `foo()` from the stack: `[bar(), main()]`. => return 2
-- Push `console.log(second)` to the stack: `[log(2), bar(), main()]`.
-- Pop (resolve) `console.log(2)` from the stack: `[bar(), main()]`. => log 2
-- Pop (resolve) `bar()` from the stack: `[main()]`.
-- Pop (resolve) `main()` from the stack: `[]`.
+- Start code:  
+  `[main()]`.
+- Push `bar()` to the stack:  
+  `[bar(), main()]`.
+- Push `console.log(1)` to the stack:  
+  `[log(1), bar(), main()]`.
+- Pop (resolve) `console.log(1)` from the stack:  
+  `[bar(), main()]`. => log 1
+- Push `foo()` to the stack:  
+  `[foo(), bar(), main()]`.
+- Pop (resolve) `foo()` from the stack:  
+  `[bar(), main()]`. => return 2
+- Push `console.log(second)` to the stack:  
+  `[log(2), bar(), main()]`.
+- Pop (resolve) `console.log(2)` from the stack:  
+  `[bar(), main()]`. => log 2
+- Pop (resolve) `bar()` from the stack:  
+  `[main()]`.
+- Pop (resolve) `main()` from the stack:  
+  `[]`.
 - Exit the stack
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
