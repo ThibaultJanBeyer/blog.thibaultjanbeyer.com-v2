@@ -2,7 +2,7 @@
 layout: post
 title: A Quick guide to the JavaScript Event Loop (Browser)
 excerpt: TL;DR ! The JavaScript event loop. What is it? Explained in a nutshell.
-image: /assets/event-loop/turbo-javascript-event-loop-roller-coaster.jpg
+image: {{ site.baseurl }}/assets/event-loop/turbo-javascript-event-loop-roller-coaster.jpg
 image_alt: A picture of a looping on a roller coaster ride with a big sign reading Turbo
 ---
 
@@ -12,7 +12,10 @@ I finally found some time to write a new article. Lately I had a talk about IT a
 
 Here is my representation of the event loop:
 
-![The JavaScript Browser Event Loop](/assets/event-loop/JavaScript-Event-Loop.png)
+<p><img class="aligncenter size-full"
+  src="{{ site.baseurl }}/assets/event-loop/JavaScript-Event-Loop.png"
+  alt="The JavaScript Browser Event Loop"
+/></p>
 
 As you can see there is a loop list, a heap which is just an allocation of memory somewhere there also resides the Web API that will handle our asynchronous activities. Then we have a stack where the event loop will place and handle our synchronous calls and a message queue where the asynchronous callback handlers will be placed.
 
@@ -23,14 +26,22 @@ Let me explain some concepts here quickly:
 A stack is a conceptual structure in which elements can be placed. The concept of a stack is `FILO` which means that the first element which you place in a stack is the last element that will get out of the stack.  
 A real world example of a Stack would be a PEZ Dispenser (if you don’t know what that is, I found a [PEZ video tutorial](https://www.youtube.com/watch?v=YIAN6eKltsA) online.
 
-![Star Wars PEZ dispenser](/assets/event-loop/PEZ-dispenser-star-wars.png)
+<p><img class="aligncenter size-full"
+  src="{{ site.baseurl }}/assets/event-loop/PEZ-dispenser-star-wars.png"
+  alt="Star Wars PEZ dispenser"
+  height="300"
+/></p>
 
 ## What is a Queue ?
 
 I think that you are all aware about what a queue is. It is a conceptual structure following the `FIFO` concept, which means that the first element which you place in a queue is the first element that comes out.  
 There are plenty real world examples of a queues. For example when you do your groceries, the line in which you stay for the checkout is a queue.
 
-![People waiting in line at a grocery store](/assets/event-loop/People-waiting-in-line-with-shopping-baskets-at-grocery-store.jpg)
+<p><img class="aligncenter size-full"
+  src="{{ site.baseurl }}/assets/event-loop/People-waiting-in-line-with-shopping-baskets-at-grocery-store.jpg"
+  alt="People waiting in line at a grocery store"
+  height="300"
+/></p>
 
 ## 1. The Call Stack
 
@@ -66,7 +77,10 @@ Considering our representation above, this is what would happen when executing t
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
 
-![Stack Example JSConf](/assets/event-loop/stack-example-jsconf.gif)
+<p><img class="aligncenter size-full"
+  src="{{ site.baseurl }}/assets/event-loop/stack-example-jsconf.gif"
+  alt="Stack Example JSConf"
+/></p>
 
 ## 2. The heap
 
@@ -114,7 +128,10 @@ For comparison I will represent the Web API as brackets `()` and the queue like 
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
 
-![Queue Example JSConf](/assets/event-loop/queue-example-jsconf.gif)
+<p><img class="aligncenter size-full"
+  src="{{ site.baseurl }}/assets/event-loop/queue-example-jsconf.gif"
+  alt="Queue Example JSConf"
+/></p>
 
 ## (non) Blocking
 
