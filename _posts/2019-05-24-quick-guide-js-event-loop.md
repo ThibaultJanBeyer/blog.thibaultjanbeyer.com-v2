@@ -10,9 +10,9 @@ I finally found some time to write a new article. Lately I had a talk about IT a
 
 ## TOC
 
-1. [How does the event loop look like ?](#how-does-the-event-loop-look-like)
-2. [What is a Stack ?](#what-is-a-stack)
-3. [What is a Queue ?](#what-is-a-queue)
+1. [How does the event loop look like?](#how-does-the-event-loop-look-like)
+2. [What is a Stack?](#what-is-a-stack)
+3. [What is a Queue?](#what-is-a-queue)
 4. [1. The Call Stack](#1-the-call-stack)
 5. [2. The Heap](#2-the-heap)
 6. [2b. Web API](#2b-web-api)
@@ -20,7 +20,7 @@ I finally found some time to write a new article. Lately I had a talk about IT a
 8. [Best Practice](#best-practice)
 9. [Further Reading](#further-reading)
 
-## How does the event loop look like ?
+## How does the event loop look like?
 
 Here is my representation of the event loop:
 
@@ -33,7 +33,7 @@ As you can see there is a loop list, a heap which is just an allocation of memor
 
 Let me explain some concepts here quickly:
 
-## What is a Stack ?
+## What is a Stack?
 
 A stack is a conceptual structure in which elements can be placed. The concept of a stack is `FILO` which means that the first element which you place in a stack is the last element that will get out of the stack.  
 A real world example of a Stack would be a PEZ Dispenser (if you don’t know what that is, I found a [PEZ video tutorial](https://www.youtube.com/watch?v=YIAN6eKltsA) online.
@@ -44,7 +44,7 @@ A real world example of a Stack would be a PEZ Dispenser (if you don’t know wh
   style="height: 300px"
 /></p>
 
-## What is a Queue ?
+## What is a Queue?
 
 I think that you are all aware about what a queue is. It is a conceptual structure following the `FIFO` concept, which means that the first element which you place in a queue is the first element that comes out.  
 There are plenty real world examples of a queues. For example when you do your groceries, the line in which you stay for the checkout is a queue.
