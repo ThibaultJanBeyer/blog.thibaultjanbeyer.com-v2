@@ -8,6 +8,18 @@ image_alt: A picture of a looping on a roller coaster ride with a big sign readi
 
 I finally found some time to write a new article. Lately I had a talk about IT and I realized that while I know most of the topics and how they work, I have really hard times explaining them. So I looked online on how others do it and only found very huge and deep articles on those topics. So, what I want to achieve is to create very brief explanation that give you a quick and good overview about complex topics. These articles are perfect to bookmark and review in case you need to refresh your knowledge. I’ll also add resources in case you want to dig deeper. Today we will have a look at the JavaScript event loop in the browser. Enjoy reading!
 
+## TOC
+
+1. [How does the event loop look like ?](#how-does-the-event-loop-look-like)
+2. [What is a Stack ?](#what-is-a-stack)
+3. [What is a Queue ?](#what-is-a-queue)
+4. [1. The Call Stack](#1-the-call-stack)
+5. [2. The Heap](#2-the-heap)
+6. [2b. Web API](#2b-web-api)
+7. [3. The Message Queue](#3-the-message-queue)
+8. [Best Practice](#best-practice)
+9. [Further Reading](#further-reading)
+
 ## How does the event loop look like ?
 
 Here is my representation of the event loop:
