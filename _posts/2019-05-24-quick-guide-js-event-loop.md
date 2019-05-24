@@ -63,25 +63,25 @@ bar();
 Considering our representation above, this is what would happen when executing the code:
 
 - Start code:  
-  `[main()]`.
+  `[main()]`
 - Push `bar()` to the stack:  
-  `[bar(), main()]`.
+  `[bar(), main()]`
 - Push `console.log(1)` to the stack:  
-  `[log(1), bar(), main()]`.
+  `[log(1), bar(), main()]`
 - Pop (resolve) `console.log(1)` from the stack:  
-  `[bar(), main()]`. => log 1
+  `[bar(), main()]` => log 1
 - Push `foo()` to the stack:  
-  `[foo(), bar(), main()]`.
+  `[foo(), bar(), main()]`
 - Pop (resolve) `foo()` from the stack:  
-  `[bar(), main()]`. => return 2
+  `[bar(), main()]` => return 2
 - Push `console.log(second)` to the stack:  
-  `[log(2), bar(), main()]`.
+  `[log(2), bar(), main()]`
 - Pop (resolve) `console.log(2)` from the stack:  
-  `[bar(), main()]`. => log 2
+  `[bar(), main()]` => log 2
 - Pop (resolve) `bar()` from the stack:  
-  `[main()]`.
+  `[main()]`
 - Pop (resolve) `main()` from the stack:  
-  `[]`.
+  `[]`
 - Exit the stack
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
@@ -118,21 +118,34 @@ console.log(2);
 
 For comparison I will represent the Web API as brackets `()` and the queue like this `<>`. This is by no means how a queue or api looks like.
 
-- Start code: `[main()]` / `()` / `<>`.
-- Push `console.log(1)` to the stack: `[log(1), main()]` / `()` / `<>`.
-- Pop (resolve) `console.log(1)` from the stack: `[main()]` => log 1 / `()` / `<>`.
-- Give `setTimeout` to the Web API: `[main()]` / `(setTimeout[5s])` / `<>`.
-- Push `console.log(2)` to the stack: `[log(2), main()]` / `(setTimeout[5s])` / `<>`.
-- Pop (resolve) `console.log(2)` from the stack: `[main()]` => log 2 / `(setTimeout[5s])` / `<>`.
-- Pop (resolve) `main` from the stack: `[]` / `()` / `<>`.
+- Start code:  
+  `[main()]` / `()` / `<>`
+- Push `console.log(1)` to the stack:  
+  `[log(1), main()]` / `()` / `<>`
+- Pop (resolve) `console.log(1)` from the stack:  
+  `[main()]` => log 1 / `()` / `<>`
+- Give `setTimeout` to the Web API:  
+  `[main()]` / `(setTimeout[5s])` / `<>`
+- Push `console.log(2)` to the stack:  
+  `[log(2), main()]` / `(setTimeout[5s])` / `<>`
+- Pop (resolve) `console.log(2)` from the stack:  
+  `[main()]` => log 2 / `(setTimeout[5s])` / `<>`
+- Pop (resolve) `main` from the stack:  
+  `[]` / `()` / `<>`
 - Exit the stack
-- The Web API timeout is over. It enqueues the `callback` function to the Message Queue: `[]` / `()` / `<callback()>`.
-- _As the Stack is empty_, the message queue is processes and dequeues `callback` by pushing it to the Stack: `[callback()]` / `()` / `<>`.
-- Push `console.log(3)` to the stack: `[log(3), callback()]` / `()` / `<>`.
-- Pop (resolve) `console.log(3)` from the stack: `[callback()]` => log 3 / `()` / `<>`.
-- Pop (resolve) `callback` from the stack: `[]` / `()` / `<>`.
+- The Web API timeout is over. It enqueues the `callback` function to the Message Queue:  
+  `[]` / `()` / `<callback()>`
+- _As the Stack is empty_, the message queue is processes and dequeues `callback` by pushing it to the Stack:  
+  `[callback()]` / `()` / `<>`
+- Push `console.log(3)` to the stack:  
+  `[log(3), callback()]` / `()` / `<>`
+- Pop (resolve) `console.log(3)` from the stack:  
+  `[callback()]` => log 3 / `()` / `<>`
+- Pop (resolve) `callback` from the stack:  
+  `[]` / `()` / `<>`
 - Exit the stack
-- The queue is empty: `[]` / `()` / `<>`.
+- The queue is empty:  
+  `[]` / `()` / `<>`
 - Exit the queue
 
 Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=8aGhZQkoFbQ) which explains it quite well:
