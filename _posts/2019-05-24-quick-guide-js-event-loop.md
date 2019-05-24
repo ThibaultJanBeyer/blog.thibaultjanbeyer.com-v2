@@ -2,7 +2,7 @@
 layout: post
 title: A Quick guide to the JavaScript Event Loop (Browser)
 excerpt: TL;DR ! The JavaScript event loop. What is it? Explained in a nutshell.
-image: {{ site.baseurl }}/assets/event-loop/turbo-javascript-event-loop-roller-coaster.jpg
+image: /assets/event-loop/turbo-javascript-event-loop-roller-coaster.jpg
 image_alt: A picture of a looping on a roller coaster ride with a big sign reading Turbo
 ---
 
