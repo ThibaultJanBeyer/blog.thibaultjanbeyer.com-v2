@@ -1,5 +1,5 @@
-.highlighter-rouge {
-  background: rgba(0, 0, 0, 0.1);
+.highlighter-rouge:not(div) {
+  background: rgba(0, 0, 0, 0.08);
   padding: 3px;
   font-family: Fira Mono;
   font-size: 0.8rem;
