@@ -17,8 +17,9 @@ I finally found some time to write a new article. Lately I had a talk about IT a
 5. [2. The Heap](#2-the-heap)
 6. [2b. Web API](#2b-web-api)
 7. [3. The Message Queue](#3-the-message-queue)
-8. [Best Practice](#best-practice)
-9. [Further Reading](#further-reading)
+8. [What comes first (example)](#what-comes-first-example)
+9. [Best Practice](#best-practice)
+10. [Further Reading](#further-reading)
 
 ## How does the event loop look like?
 
@@ -171,6 +172,40 @@ Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=
 
 As mentioned before that refers to JavaScript handling events sequentially. The call stack can not be interrupted while running. The Queue is only processes when the call stack is empty. The timer on the setTimeout is just the minimum time to wait, it can take longer to be executed since it has to wait until the call stack is empty and all entries that are in the queue before the timeout dequeued.  
 So the calls executed on the web-api are referred as `non blocking`. Anything executed on the call stack is considered `blocking` as it prevents everything else from being executed. For example if you have a long running function on the call stack, it will even prevent user interaction like even clicking on buttons on the page. An infinite loop for example will block the execution of anything else forever and thus crash the browser tab.
+
+## What comes first (example)
+
+So now having all this knowledge, what will be executed first?
+
+```javascript
+console.log(1);
+setImmediate(() => console.log("immediate"));
+requestAnimationFrame(() => console.log("animation"));
+requestIdleCallback(() => console.log("idle"));
+setInterval(() => console.log("interval"));
+setTimeout(() => console.log("timeout"));
+Promise.resolve().then(() => console.log("promise resolved"));
+console.log(2);
+```
+
+Ok that one is mean because I added some `requestIdleCallback` and `setImmediate` which are non-standard. The output is actually:
+
+```
+1
+2
+promise resolved
+immediate
+animation
+interval
+timeout
+idle
+
+interval interval interval etc…
+```
+
+Which surprised me because based on the specs immediate should come later. But it’s currently non-standard and only implemented in Internet Explorer.
+Apart from that, the promises are resolved immediately and handled before the timeout or interval.
+Timeout is usually handled last (except for `requestIdleCallback` which really waits until nothing else is running), so as you understand the timeout milliseconds is just a minimum wait time and might vary strongly.
 
 ## Best Practice
 
