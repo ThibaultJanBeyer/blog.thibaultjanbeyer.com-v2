@@ -37,7 +37,7 @@ Let me explain some concepts here quickly:
 ## What is a Stack?
 
 A stack is a conceptual structure in which elements can be placed. The concept of a stack is `FILO` which means that the first element which you place in a stack is the last element that will get out of the stack.  
-A real world example of a Stack would be a PEZ Dispenser (if you don’t know what that is, I found a [PEZ video tutorial](https://www.youtube.com/watch?v=YIAN6eKltsA) online.
+A real world example of a Stack would be a PEZ Dispenser (if you don’t know what that is, I found a [PEZ video tutorial](https://www.youtube.com/watch?v=YIAN6eKltsA) online).
 
 <p><img class="aligncenter size-full"
   src="{{ site.baseurl }}/assets/event-loop/PEZ-dispenser-star-wars.png"
@@ -48,7 +48,7 @@ A real world example of a Stack would be a PEZ Dispenser (if you don’t know wh
 ## What is a Queue?
 
 I think that you are all aware about what a queue is. It is a conceptual structure following the `FIFO` concept, which means that the first element which you place in a queue is the first element that comes out.  
-There are plenty real world examples of a queues. For example when you do your groceries, the line in which you stay for the checkout is a queue.
+There are plenty real world examples of queues. For example when you do your groceries, the line in which you stay for the checkout is a queue.
 
 <p><img class="aligncenter size-full"
   src="{{ site.baseurl }}/assets/event-loop/People-waiting-in-line-with-shopping-baskets-at-grocery-store.jpg"
@@ -114,10 +114,10 @@ Are handling the asynchronous operations, they are responsible to hold timeouts,
 
 ## 3. The Message Queue
 
-When we use an asynchronous method, the web-api will take care of it’s delay time and place it into the queue as soon as it is resolved.  
+When we use an asynchronous method, the web-api will take care of its delay time and place it into the queue as soon as it is resolved.  
 When the Call Stack is empty, the message queue is resolved.
 
-Lets consider this example:
+Let’s consider this example:
 
 ```javascript
 console.log(1);
@@ -129,7 +129,7 @@ setTimeout(function callback() {
 console.log(2);
 ```
 
-For comparison I will represent the Web API as brackets `()` and the queue like this `<>`. This is by no means how a queue or api looks like.
+For comparison, I will represent the Web API as brackets `()` and the queue like this `<>`. This is by no means how a queue or API looks like.
 
 - Start code:  
   `[main()]` / `()` / `<>`
@@ -170,8 +170,8 @@ Here is an excerpt from a [talk on the JS Conf](https://www.youtube.com/watch?v=
 
 ## (non) Blocking
 
-As mentioned before that refers to JavaScript handling events sequentially. The call stack can not be interrupted while running. The Queue is only processes when the call stack is empty. The timer on the setTimeout is just the minimum time to wait, it can take longer to be executed since it has to wait until the call stack is empty and all entries that are in the queue before the timeout dequeued.  
-So the calls executed on the web-api are referred as `non blocking`. Anything executed on the call stack is considered `blocking` as it prevents everything else from being executed. For example if you have a long running function on the call stack, it will even prevent user interaction like even clicking on buttons on the page. An infinite loop for example will block the execution of anything else forever and thus crash the browser tab.
+As mentioned before that refers to JavaScript handling events sequentially. The call stack can not be interrupted while running. The Queue is only processes when the call stack is empty. The timer on the setTimeout is just the minimum time to wait, it can take longer to be executed since it has to wait until the call stack is empty and all entries that are in the queue before the timeout de-queued.  
+So the calls executed on the web-api are referred as `non-blocking`. Anything executed on the call stack is considered `blocking` as it prevents everything else from being executed. For example if you have a long-running function on the call stack, it will even prevent user interaction like even clicking on buttons on the page. An infinite loop for example will block the execution of anything else forever and thus crash the browser tab.
 
 ## What comes first (example)
 
@@ -188,7 +188,7 @@ Promise.resolve().then(() => console.log("promise resolved"));
 console.log(2);
 ```
 
-Ok that one is mean because I added some `requestIdleCallback` and `setImmediate` which are non-standard. The output is actually:
+Ok, that was mean because I added some `requestIdleCallback` and `setImmediate` which are non-standard. The output is actually:
 
 ```
 1
@@ -205,19 +205,19 @@ interval interval interval etc…
 
 Which surprised me because based on the specs immediate should come later. But it’s currently non-standard and only implemented in Internet Explorer.
 Apart from that, the promises are resolved immediately and handled before the timeout or interval.
-Timeout is usually handled last (except for `requestIdleCallback` which really waits until nothing else is running), so as you understand the timeout milliseconds is just a minimum wait time and might vary strongly.
+Timeout is usually handled last (except for `requestIdleCallback` which really waits until nothing else is running), so as you understand the timeout milliseconds is just a minimum wait time and is not always accurate.
 
 ## Best Practice
 
-- Try to avoid long running (blocking) methods by reducing the time complexity (for example avoiding unnecessary loops).
-- If the long running method can not be avoided, delegate it to a [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). Those will be executed in background threads and thus not block the main execution.
-- Avoid infinite loops. This might sound like a no-brainer but it’s still worth mentioning, and I think that now you understand why infinite loops are crashing the webapp.
+- Try to avoid long-running (blocking) methods by reducing the time complexity (for example avoiding unnecessary loops).
+- If the long-running method can not be avoided, delegate it to a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). Those will be executed in background threads and thus not block the main execution.
+- Avoid infinite loops. This might sound like a no-brainer but it’s still worth mentioning, and I think that now you understand why infinite loops are crashing the web-app.
 
 ## Further reading
 
-I hope that this breaf overview could give you a solid understanding of the JS Event Loop. If you’re feeling like you want to dig deeper, here are some articles I recommend on the topic:
+I hope that this brief overview could give you a solid understanding of the JS Event Loop. If you’re feeling like you want to dig deeper, here are some articles I recommend on the topic:
 
-- I can really recommend checking out the full [talk by Philip Roberts on youtube](https://www.youtube.com/watch?v=8aGhZQkoFbQ). I was at the JS Conf in person and was quite impressed on how well he explained the topic.
+- I can really recommend checking out the full [talk by Philip Roberts on YouTube](https://www.youtube.com/watch?v=8aGhZQkoFbQ). I was at the JS-Conf in person and was quite impressed on how well he explained the topic.
 - You’ll find an on the point explanation of the [Concurrency Model and the Event Loop on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop) as well.
 - [Flavio Copes](https://flaviocopes.com/javascript-event-loop/#blocking-the-event-loop) digs a bit deeper in the subject then I did.
 - For the NodeJS event loop, while it is similar at the core, it will still be treated a bit differently. I can recommend [Deepals 6 article series](https://jsblog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810) which is very detailed.
