@@ -17,9 +17,10 @@ I finally found some time to write a new article. Lately I had a talk about IT a
 5. [2. The Heap](#2-the-heap)
 6. [2b. Web API](#2b-web-api)
 7. [3. The Message Queue](#3-the-message-queue)
-8. [What comes first (example)](#what-comes-first-example)
-9. [Best Practice](#best-practice)
-10. [Further Reading](#further-reading)
+8. [(non) Blocking](#non-blocking)
+9. [What comes first (example)](#what-comes-first-example)
+10. [Best Practice](#best-practice)
+11. [Further Reading](#further-reading)
 
 ## How does the event loop look like?
 
@@ -212,6 +213,8 @@ Timeout is usually handled last (except for `requestIdleCallback` which really w
 - Try to avoid long-running (blocking) methods by reducing the time complexity (for example avoiding unnecessary loops).
 - If the long-running method can not be avoided, delegate it to a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers). Those will be executed in background threads and thus not block the main execution.
 - Avoid infinite loops. This might sound like a no-brainer but it’s still worth mentioning, and I think that now you understand why infinite loops are crashing the web-app.
+- Avoid ducktaping using the message queue. Often problems like race conditions are solved by placing methods to the message queue using setTimeout. That however will quickly lead to unmaintainable code because in a big app it is difficult to see which elements are in the message queue in what order. You should rather fix the root cause.
+- Don’t use a timeout as a callback. For example, when you want to remove a div element after playing an animation (for example slowly putting the opacity to 0 to fade it out). You should rather use genuine callbacks like [onanimationend](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onanimationend) or[ontransitionend](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ontransitionend) because [as we learned](#non-blocking), the setTimeout will not always be accurate in terms of time.
 
 ## Further reading
 
