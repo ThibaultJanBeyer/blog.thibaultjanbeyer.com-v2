@@ -1,14 +1,17 @@
-<!-- Twitter cards -->
 <meta name="twitter:site" content="@ThibaultBeyer"/>
 <meta name="twitter:creator" content="@ThibaultBeyer"/>
+
+<meta name="og:title" property="og:title" content="{{ page.title }}"/>
 <meta name="twitter:title" content="{{ page.title }}"/>
 
 {% if page.excerpt %}
+  <meta name="og:description" property="og:description" content="{{ page.excerpt }}"/>
   <meta name="twitter:description" content="{{ page.excerpt }}"/>
 {% else %}
   <meta name="twitter:description" content="{{ site.description }}"/>
 {% endif %}
 {% if page.image %}
+  <meta name="og:image" property="og:image" content="{{ site.url }}{{ page.image }}"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}"/>
   <meta name="twitter:card" content="summary_large_image"/>
@@ -17,4 +20,3 @@
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:image" content="{{ site.title_image }}"/>
 {% endif %}
-<!-- end of Twitter cards -->
