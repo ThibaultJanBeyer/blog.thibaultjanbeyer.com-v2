@@ -227,4 +227,4 @@ I hope that this brief overview could give you a solid understanding of the JS E
 
 Thank you for reading and feel free to ask any question or let me know if you found any mistake.
 
-PS: don’t forget to share the knowledge and to follow me <a href="https://twitter.com/ThibaultBeyer">on twitter <i class="fa fa-twitter"></i></a> or via <a class="toggle-sidebar" data-a11y-dialog-show="subscribe-dialog" href="#site-sidebar">email <i class="fa fa-fw fa-columns"></i></a> if you liked this post :)
+PS: don’t forget to share the knowledge and to follow me <a href="https://twitter.com/ThibaultBeyer">on twitter <i class="fab fa-twitter"></i></a> or via <a class="toggle-sidebar" data-a11y-dialog-show="subscribe-dialog" href="#site-sidebar">email <i class="fa fa-fw fa-columns"></i></a> if you liked this post :)

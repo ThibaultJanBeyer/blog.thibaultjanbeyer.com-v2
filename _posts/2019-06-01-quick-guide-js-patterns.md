@@ -584,4 +584,4 @@ If you liked the patterns I can recommend following resources for a deep dive:
 
 Congratulations! You just learned the basics from the most used design patterns in JavaScript. This should give you an understanding of code architecture and how to improve your code. Considering patterns truly makes you stand apart from most devs and improves your code quality.
 
-PS: don’t forget to share the knowledge and to follow me <a href="https://twitter.com/ThibaultBeyer">on twitter <i class="fa fa-twitter"></i></a> or via <a class="toggle-sidebar" data-a11y-dialog-show="subscribe-dialog" href="#site-sidebar">email <i class="fa fa-fw fa-columns"></i></a> if you liked this post :)
+PS: don’t forget to share the knowledge and to follow me <a href="https://twitter.com/ThibaultBeyer">on twitter <i class="fab fa-twitter"></i></a> or via <a class="toggle-sidebar" data-a11y-dialog-show="subscribe-dialog" href="#site-sidebar">email <i class="fa fa-fw fa-columns"></i></a> if you liked this post :)
