@@ -3,17 +3,13 @@ layout: default
 ---
 
 <article class="post postview">
-  <h1>{{ page.title }}</h1>
-
   {% if page.image %}
-  <p>
-    <img
-      class="aligncenter size-full"
-      src="{{ site.url }}{{ page.image }}"
-      alt="{{ page.image_alt }}"
-    />
-  </p>
+  <div class="post-title-img">
+    <img src="{{ site.url }}{{ page.image }}" alt="{{ page.image_alt }}" />
+  </div>
   {% endif %}
+
+  <h1>{{ page.title }}</h1>
 
   <div class="entry">
     {% if site.google_adsense_custom %}
