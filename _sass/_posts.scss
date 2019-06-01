@@ -61,7 +61,8 @@
   }
 
   @include large {
-    padding: 150px 60px 45px;
+    padding-left: 60px;
+    padding-right: 60px;
     width: 90%;
   }
 }
