@@ -32,9 +32,11 @@ Here, I will give you a brief explanation on patterns I stumble across. I will f
 9. [Further Reading](#further-reading)
 10. [Final Words](#final-words)
 
+_Please note that all JS code examples are just examples. They can be written in a variety of ways. How you write the pattern is up to you. A Pattern is just an abstract idea._
+
 ## Singleton Pattern
 
-The singleton pattern is the simple concept of restricting the instantiation of a class to one object/instance.
+The singleton pattern is the simple concept of restricting the instantiating of a class to one object/instance.
 
 ### Real Life Example
 
@@ -68,21 +70,21 @@ const instance = new Singleton();
 export default instance;
 ```
 
-_Please note that this is just an example. A singleton can be written in a variety of ways. How you write the singleton pattern is up to you. Singleton is just an abstract idea of only having instances once._
+_Please note that this and all further JS code examples are just examples. They can be written in a variety of ways. How you write the pattern is up to you. A Pattern is just an abstract idea._
 
 ### Pros and Cons of the Singleton Pattern
 
 #### Pros
 
 - Instance control: Singleton prevents other objects from instantiating their own copies of the Singleton object, ensuring that all objects access the single instance.
-- Flexibility: Since the class controls the instantiation process, the class has the flexibility to change the instantiation process.
-- Easy to implement: Easy to create and we could use it anywhere for the lifetime of the app The advantage of Singleton over global variables is that you are absolutely sure of the number of instances when you use Singleton.
+- Flexibility: Since the class controls the instantiating process, the class has the flexibility to change the instantiating process.
+- Easy to implement: Easy to create, and we could use it anywhere for the lifetime of the app The advantage of Singleton over global variables is that you are absolutely sure of the number of instances when you use Singleton.
 
 #### Cons
 
 - They are a global mutable shared state. Their state is automatically shared across the entire app, and bugs can often start occurring when that state changes unexpectedly.
-- The relationships between Singletons and the code that depends on them is usually not very well defined. Since Singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects.
-- Managing their life-cycle can be tricky. Since Singletons are alive during the entire lifespan of an application, managing them can be really hard, and they usually have to rely on optionals to keep track of values. This also makes code that relies on Singletons really hard to test, since you can’t easily start from a “clean slate” in each test case.
+- The relationships between Singletons and the code that depends on them is usually not very well-defined. Since Singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects.
+- Managing their life-cycle can be tricky. Since Singletons are alive during the entire lifespan of an application, managing them can be really hard. This also makes code that relies on Singletons really hard to test, since you can’t easily start from a “clean slate” in each test case.
 
 ## Prototype Pattern
 
@@ -158,7 +160,7 @@ console.log(myClass.private); // => undefined
 console.log(myClass.privateFunc()); // => TypeError … is not a function
 ```
 
-As you can see, the `private` variable is not exposed while baz is.
+As you can see, the `private` variable is not exposed while `baz` is.
 
 - Revealing Class example:
 
@@ -261,11 +263,11 @@ uppercaseModule('test');
 
 #### Pros
 
-- Encapsulation
+- Encapsulation. Which prevents variable or method names to clash and override each other.
 
 #### Cons
 
-- Revealing module pattern keeps private methods out of scope. That is both, good and bad. It can be good because you have the power to limit users to only use public methods. It can be bas because the user has no possibility to extend some private functionality.
+- Revealing module pattern keeps private methods out of scope. That is both, good and bad. It can be good because you have the power to limit users to only use public methods. It can be bad because the user has no possibility to extend some private functionality.
 
 ## Decorator Pattern
 
@@ -316,7 +318,7 @@ user.say(); // User: him, admin
 #### Pros
 
 - Extend an object’s behavior without making a new subclass.
-- Add or remove responsibilities from an object at runtime.
+- Add or remove responsibilities from an object at run time.
 - Combine several behaviors by wrapping an object into multiple decorators.
 - Single Responsibility Principle. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.
 
@@ -407,7 +409,7 @@ An observer pattern could be something like that:
 - Decouples observers from the initiator.
 - Send data to many other objects in a very efficient manner.
 - You can add and remove observers at anytime.
-- Built in in some languages/frameworks
+- Built in, in some languages/frameworks
 
 #### Cons
 
@@ -420,7 +422,7 @@ Is a somewhat loosely coupled observer pattern: a sender of messages called _pub
 
 ### Real Life Example
 
-A suggestion or complain box could be an example. Another example might be an information window, the _publisher_ places informational messages into the window then anyone interested can read those messages.
+A suggestion or complaint box could be an example. Another example might be an information window, the _publisher_ places informational messages into the window then anyone interested can read those messages.
 
 <p><img class="aligncenter size-full"
   src="{{ site.baseurl }}/assets/patterns/message-wall.jpg"
@@ -491,7 +493,7 @@ topic.publish('api/user/refresh', { name: 'bar' }); // this would trigger a cons
 #### Pros
 
 - Publishers are loosely coupled to subscribers, and need not even know of their existence.
-- Scalability: parallel operation, message caching,…
+- Scalability: parallel operation, message caching, …
 
 #### Cons
 
@@ -571,7 +573,7 @@ In this case the chatroom is the mediator between its members.
 
 ## Further Reading
 
-If you liked the patterns I can recommend following resources for a deepdive:
+If you liked the patterns I can recommend following resources for a deep dive:
 
 - [Design Patterns explained by refactoring guru](https://refactoring.guru/design-patterns) which is very well illustrated.
 - [Learning JavaScript Design Patterns. A book by Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) which is very detailed.
