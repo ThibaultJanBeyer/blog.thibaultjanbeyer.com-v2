@@ -52,12 +52,16 @@
 
 .postview {
   padding: 150px 60px 45px;
-  width: 90%;
+  width: 100%;
   font-size: 1.2rem;
   margin: auto;
 
   iframe {
     width: 100%;
+  }
+
+  @include large {
+    width: 90%;
   }
 }
 

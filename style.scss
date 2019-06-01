@@ -29,11 +29,12 @@ html {
 .container {
   margin: 0 auto;
   max-width: 800px;
-  padding: 0 10px;
+  padding: 0;
   width: 100%;
 
   @include large {
     max-width: 1000px;
+    padding: 0 10px;
   }
 }
 
