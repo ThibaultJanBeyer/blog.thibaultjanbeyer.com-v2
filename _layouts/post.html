@@ -3,56 +3,71 @@ layout: default
 ---
 
 <article class="post postview">
-  
   <h1>{{ page.title }}</h1>
 
+  {% if page.image %}
+  <p>
+    <img
+      class="aligncenter size-full"
+      src="{{ site.url }}{{ page.image }}"
+      alt="{{ page.image_alt }}"
+    />
+  </p>
+  {% endif %}
+
   <div class="entry">
-    {% if site.google_adsense_custom %} 
+    {% if site.google_adsense_custom %}
     <!-- Broomball - Top Article Ad -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:250px;float:right;"
-         data-ad-client="{{ google_adsense }}"
-         data-ad-slot="{{ google_adsense_toppost }}"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    {% endif %} 
-    
+    <ins
+      class="adsbygoogle"
+      style="display:inline-block;width:300px;height:250px;float:right;"
+      data-ad-client="{{ google_adsense }}"
+      data-ad-slot="{{ google_adsense_toppost }}"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    {% endif %}
+
     {{ content }}
   </div>
 
   <div class="entry">
     <h2>4 Great Posts</h2>
     <ul class="related_posts">
-      {% for post in site.related_posts limit: 4 %}
-        {% if forloop.index > 2 %}
-          {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
-          {% assign post = site.posts[random] %}
-        {% endif %}
-        <li class="related_post">
-          <a href="{{ post.url }}">
-            {% if post.image %}
-              <img src="{{ post.image }}"
-                  alt="{{ post.image_alt }}"
-                  class="posts__img">
-            {% endif %}
-            <h3 class="title">
-              {{ post.title }}
-            </h3>
-          </a>
-        </li>
+      {% for post in site.related_posts limit: 4 %} {% if forloop.index > 2 %}
+      {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
+      {% assign post = site.posts[random] %} {% endif %}
+      <li class="related_post">
+        <a href="{{ post.url }}">
+          {% if post.image %}
+          <img
+            src="{{ post.image }}"
+            alt="{{ post.image_alt }}"
+            class="posts__img"
+          />
+          {% endif %}
+          <h3 class="title">
+            {{ post.title }}
+          </h3>
+        </a>
+      </li>
       {% endfor %}
     </ul>
   </div>
 
   {% if site.google_adsense_custom %}
   <!-- Broomball - Below content -->
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="{{ google_adsense }}"
-     data-ad-slot="{{ google_adsense_botpost }}"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  {% endif %}
-  
-  {% include disqus.html %}
+  <ins
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{ google_adsense }}"
+    data-ad-slot="{{ google_adsense_botpost }}"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  {% endif %} {% include disqus.html %}
 </article>
