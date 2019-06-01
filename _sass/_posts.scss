@@ -51,7 +51,7 @@
 }
 
 .postview {
-  padding: 150px 60px 45px;
+  padding: 150px 30px 45px;
   width: 100%;
   font-size: 1.2rem;
   margin: auto;
@@ -61,6 +61,7 @@
   }
 
   @include large {
+    padding: 150px 60px 45px;
     width: 90%;
   }
 }

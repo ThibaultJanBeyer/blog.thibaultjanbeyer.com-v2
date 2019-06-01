@@ -15,7 +15,11 @@ pre.highlight {
   font-size: 0.9rem;
   line-height: 0.9;
   font-family: $font-mono;
-  margin: 5px -60px 15px;
+  margin: 5px -30px 15px;
+
+  @include large {
+    margin: 5px -60px 15px;
+  }
 }
 
 .highlight .hll {
