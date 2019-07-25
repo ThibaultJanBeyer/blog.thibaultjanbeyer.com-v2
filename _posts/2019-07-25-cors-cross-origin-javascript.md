@@ -94,7 +94,7 @@ It is what stops for example Facebook accessing the data from your bank account.
 
 1. You could for example from website A open another website B and read/manipulate its content like so:
 
-```JavaScript
+```javascript
 // on www.hacker.com
 const bank = window.open("https://www.yourbank.com/transactions", "right");
 console.log(bank.document.body); // same origin “error”
@@ -108,7 +108,7 @@ Which is a good example on how one website/window/origin is isolated from anothe
 
 2. The same could be done using frames:
 
-```HTML
+```html
 <!-- on www.hacker.com -->
 <frameset cols="50%,50%">
   <frame name="framea" src="https://www.hacker.com/hack" />
@@ -128,7 +128,7 @@ Same as with example one, because of the Same Origin Policy the website hacker.c
 
 Any image, video, CSS and JS code <i class="hilite">can be loaded and executed from any other site but not read</i>. The image will be shown, the video will be shown and the CSS will be applied. However, you won’t be able to read the contents with JavaScript:
 
-```HTML
+```html
 <!-- on www.hacker.com -->
 <link rel="stylesheet" type="text/css" href="hacker.css">
 <link rel="stylesheet" type="text/css" href="https://www.yourbank.com/transactions.css">
@@ -142,10 +142,10 @@ The same example applies to images, videos and JavaScript code. This is done to 
 
 4. HTTP Requests:
 
-```JavaScript
+```javascript
 // on www.hacker.com
-fetch("https://hacker.com/info", { method: "POST", body: "hi" }) // works
-fetch("https://yourbank.com/transactions", { method: "POST", body: "hi" }) // does not
+fetch('https://hacker.com/info', { method: 'POST', body: 'hi' }); // works
+fetch('https://yourbank.com/transactions', { method: 'POST', body: 'hi' }); // does not
 ```
 
 Note that the request is actually happening: the browser sends the request to your bank, the browser will receive the response from your bank, but the browser will not let JavaScript access that response. You will get some kind of `No 'Access-Control-Allow-Origin' Headers present` error message instead.
@@ -241,7 +241,7 @@ For Requests:
 The fabulous website [enable-cors.org](https://enable-cors.org/server.html) has a list on how to enable CORS for Apache, nginx, PHP, Tomcat, Caddy, Meteor and many more.
 For NodeJS you can either write them yourself or use this nice [express middleware](https://expressjs.com/en/resources/middleware/cors.html).
 
-```JavaScript
+```javascript
 const express = require('express');
 const app = express();
 
@@ -264,7 +264,7 @@ app.listen(3000, function () {
 
 In HTML, there is an attribute for that! It’s called [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes) and here is how you use it:
 
-```HTML
+```html
 <img crossorigin="anonymous" src="https://foo.com/img">
 <!-- OR -->
 <img crossorigin="use-credentials" src="https://foo.com/img">
@@ -291,7 +291,7 @@ PostMessage allow sites to “opt-in” to remove SOP.
 
 #### Example
 
-```JavaScript
+```javascript
 // Sender (parentsite)
 window.frameA.postMessage(message, "http://siteA.com");
 // Receiver (siteA)
@@ -319,7 +319,7 @@ Why does it work? Because as described above, SOP doesn’t apply server-to-serv
 
 #### Example
 
-```JavaScript
+```javascript
 var proxy = require('express-http-proxy');
 var app = require('express')();
 
