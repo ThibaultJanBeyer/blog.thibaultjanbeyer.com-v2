@@ -92,7 +92,7 @@ It is what stops for example Facebook accessing the data from your bank account.
 
 ### Examples of the Same Origin Policy
 
-1. You could for example from website A open another website B and read/manipulate its content like so:
+#### You could for example from website A open another website B and read/manipulate its content like so:
 
 ```javascript
 // on www.hacker.com
@@ -106,7 +106,7 @@ Now suppose I’m logged in already, hacker.com could read all information of th
 Luckily the Same Origin Policy prevents that. So the actual output will be an error similar to: `Error: Blocked a frame with origin "https://www.hacker.com/" from accessing a cross-origin frame`.
 Which is a good example on how one website/window/origin is isolated from another by the Same Origin Policy.
 
-2. The same could be done using frames:
+#### The same could be done using frames:
 
 ```html
 <!-- on www.hacker.com -->
@@ -124,7 +124,7 @@ Here is some ancient example of frames. This is how websites used to be ~15 year
 Although the same principles apply on `iframes`, which you are probably more familiar with.
 Same as with example one, because of the Same Origin Policy the website hacker.com can only access the contents of `framea` (since it is on the same origin) but not `frameb`!
 
-3. Images, Video, CSS and JS:
+#### Images, Video, CSS and JS:
 
 Any image, video, CSS and JS code <i class="hilite">can be loaded and executed from any other site but not read</i>. The image will be shown, the video will be shown and the CSS will be applied. However, you won’t be able to read the contents with JavaScript:
 
@@ -140,7 +140,7 @@ Any image, video, CSS and JS code <i class="hilite">can be loaded and executed f
 
 The same example applies to images, videos and JavaScript code. This is done to protect you in case there was any sensitive information in an image/video/css
 
-4. HTTP Requests:
+#### HTTP Requests:
 
 ```javascript
 // on www.hacker.com
