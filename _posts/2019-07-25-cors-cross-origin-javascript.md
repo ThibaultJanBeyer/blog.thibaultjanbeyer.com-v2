@@ -34,7 +34,7 @@ I’ve been developing front-end applications all my life. Nevertheless, every t
       https://enable-cors.org/index.html is a website that explains how to enable CORS on most backend technologies.
     </li>
   <ul>
-</blockquote>
+</blockquote><br />
 
 ## TOC
 
