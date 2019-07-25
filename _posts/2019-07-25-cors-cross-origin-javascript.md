@@ -42,10 +42,10 @@ I’ve been developing front-end applications all my life. Nevertheless, every t
 
 1 [What the f\* is CORS anyways?](#what-the-f-is-cors-anyways)
 
-- 1.1. [Same Origin Policy (SOP)](#same-origin-policy-sop)  
-- 1.2. [How is the Same Origin Policy useful?](#how-is-the-same-origin-policy-useful)  
-- 1.3. [Examples of the Same Origin Policy](#examples-of-the-same-origin-policy)  
-- 1.4. [So should we keep enforcing the Same Origin Policy?](#so-should-we-keep-enforcing-the-same-origin-policy)  
+- 1.1. [Same Origin Policy (SOP)](#same-origin-policy-sop)
+- 1.2. [How is the Same Origin Policy useful?](#how-is-the-same-origin-policy-useful)
+- 1.3. [Examples of the Same Origin Policy](#examples-of-the-same-origin-policy)
+- 1.4. [So should we keep enforcing the Same Origin Policy?](#so-should-we-keep-enforcing-the-same-origin-policy)
 
 ### Usage
 
@@ -67,7 +67,7 @@ I’ve been developing front-end applications all my life. Nevertheless, every t
 
 ### End
 
-4 [Further Reading](#further-reading)
+4 [Further Reading](#further-reading)  
 5 [Final Words](#final-words)
 
 ## What the f\* is CORS anyways?
