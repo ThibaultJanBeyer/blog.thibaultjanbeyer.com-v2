@@ -96,7 +96,7 @@ It is what stops for example Facebook accessing the data from your bank account.
 
 ```javascript
 // on www.hacker.com
-const bank = window.open("https://www.yourbank.com/transactions", "right");
+const bank = window.open('https://www.yourbank.com/transactions', 'right');
 console.log(bank.document.body); // same origin “error”
 ```
 
@@ -130,8 +130,12 @@ Any image, video, CSS and JS code <i class="hilite">can be loaded and executed f
 
 ```html
 <!-- on www.hacker.com -->
-<link rel="stylesheet" type="text/css" href="hacker.css">
-<link rel="stylesheet" type="text/css" href="https://www.yourbank.com/transactions.css">
+<link rel="stylesheet" type="text/css" href="hacker.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://www.yourbank.com/transactions.css"
+/>
 <script>
   console.log(document.styleSheets[0].rules); // works
   console.log(document.styleSheets[1].rules); // null (empty)
@@ -155,7 +159,8 @@ As you can see, the Same Origin Policy is a set of rules implemented by the brow
 ### So should we keep enforcing the Same Origin Policy?
 
 It depends. While it might be another layer of security, I can totally aggree with [ttwinlakkes](https://www.reddit.com/r/Frontend/comments/cfpf5a/what_are_your_painpoints_with_cors_cross_origin/euchfph/):
-most of the times I have had problems with it is with protected APIs that already have protections in place. It might be a good idea in general, but it is a nuisance if your only cross-origin resources are protected public endpoints.  
+most of the times I have had problems with it is with protected APIs that already have protections in place. It might be a good idea in general, but it is a nuisance if your only cross-origin resources are protected public endpoints.
+
 As you can see it really depends on your use case: Enabling Cross Origin Request for all domains **is not** a security risc per se and can make total sense. Generally, <i class="hilite">for 99% of public APIs the Same Origin Policy makes absolutely no sense</i>.
 
 ## Cross-Origin Resource Sharing (CORS) to the rescue!
@@ -189,7 +194,7 @@ CORS allows a site to “opt-in” to weaken SOP and allow external pages to acc
 
 ### What Headers do we need?
 
-1. [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin)
+#### [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin)
 
 Restricts which origins are allowed to make a request.
 Use `*` to allow access from all origins or use a specific origin:
@@ -200,7 +205,7 @@ Access-Control-Allow-Origin: https://developer.mozilla.org
 
 <i class="hilite">If you require the client to pass authentication headers (e.g. cookies) the value [can not be \*](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSNotSupportingCredentials) — it must be a fully qualified domain!</i>
 
-2. [Access-Control-Allow-Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods)
+#### [Access-Control-Allow-Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods)
 
 Which [HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) are allowed to be made:
 
@@ -208,7 +213,7 @@ Which [HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) 
 Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, PATCH, DELETE
 ```
 
-3. [Access-Control-Allow-Credentials](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials)
+#### [Access-Control-Allow-Credentials](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials)
 
 Only required if your server supports cookie auth.
 
@@ -216,7 +221,7 @@ Only required if your server supports cookie auth.
 Access-Control-Allow-Credentials: true
 ```
 
-4. More access control headers:
+#### More access control headers:
 
 These are less common, still, here is the list:
 
@@ -247,15 +252,18 @@ const app = express();
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
-  res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS,PATCH');
+  res.append(
+    'Access-Control-Allow-Methods',
+    'GET,PUT,POST,DELETE,OPTIONS,PATCH'
+  );
   next();
 });
 
 app.post('/', async (req, res) => {
-  res.send("ok")
+  res.send('ok');
 });
 
-app.listen(3000, function () {
+app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
 });
 ```
@@ -265,13 +273,21 @@ app.listen(3000, function () {
 In HTML, there is an attribute for that! It’s called [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes) and here is how you use it:
 
 ```html
-<img crossorigin="anonymous" src="https://foo.com/img">
+<img crossorigin="anonymous" src="https://foo.com/img" />
 <!-- OR -->
-<img crossorigin="use-credentials" src="https://foo.com/img">
+<img crossorigin="use-credentials" src="https://foo.com/img" />
 <!-- Also works with other resources: -->
-<script crossorigin="anonymous" src="https://example.com/example-framework.js"></script>
-<link   crossorigin="use-credentials" rel="manifest" href="/app.webmanifest">
-<video  crossorigin="anonymous" src="https://example.com/videofile.ogg" autoplay poster="posterimage.jpg"></video>
+<script
+  crossorigin="anonymous"
+  src="https://example.com/example-framework.js"
+></script>
+<link crossorigin="use-credentials" rel="manifest" href="/app.webmanifest" />
+<video
+  crossorigin="anonymous"
+  src="https://example.com/videofile.ogg"
+  autoplay
+  poster="posterimage.jpg"
+></video>
 ```
 
 Note:
@@ -293,11 +309,11 @@ PostMessage allow sites to “opt-in” to remove SOP.
 
 ```javascript
 // Sender (parentsite)
-window.frameA.postMessage(message, "http://siteA.com");
+window.frameA.postMessage(message, 'http://siteA.com');
 // Receiver (siteA)
 window.addEventListener('message', event => {
-  if(event.origin !== 'http://parentsite.com') {
-    console.log("wrong origin");
+  if (event.origin !== 'http://parentsite.com') {
+    console.log('wrong origin');
   } else {
     document.body.innerText = event.data;
   }
@@ -331,8 +347,8 @@ It takes any request to the `/proxy` endpoint and passes it through to `www.goog
 
 #### Other Proxies
 
-- Webpack has its own proxy included: https://webpack.js.org/configuration/dev-server/#devserverproxy
-- Robwu has hosted a proxy for us: https://cors-anywhere.herokuapp.com/ | https://github.com/Rob--W/cors-anywhere/
+- Webpack has its own proxy included: [https://webpack.js.org/configuration/dev-server/#devserverproxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
+- Robwu has hosted a proxy for us: [https://cors-anywhere.herokuapp.com/](https://cors-anywhere.herokuapp.com/) | [https://github.com/Rob--W/cors-anywhere/](https://github.com/Rob--W/cors-anywhere/)
 
 ## Further Reading
 
