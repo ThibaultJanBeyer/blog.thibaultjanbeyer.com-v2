@@ -40,35 +40,35 @@ I’ve been developing front-end applications all my life. Nevertheless, every t
 
 ### Understanding
 
-1. [What the f\* is CORS anyways?](#what-the-f-is-cors-anyways)
+1 [What the f\* is CORS anyways?](#what-the-f-is-cors-anyways)
 
-   1.1. [Same Origin Policy (SOP)](#same-origin-policy-sop)
-   1.2. [How is the Same Origin Policy useful?](#how-is-the-same-origin-policy-useful)
-   1.3. [Examples of the Same Origin Policy](#examples-of-the-same-origin-policy)
-   1.4. [So should we keep enforcing the Same Origin Policy?](#so-should-we-keep-enforcing-the-same-origin-policy)
+- 1.1. [Same Origin Policy (SOP)](#same-origin-policy-sop)  
+- 1.2. [How is the Same Origin Policy useful?](#how-is-the-same-origin-policy-useful)  
+- 1.3. [Examples of the Same Origin Policy](#examples-of-the-same-origin-policy)  
+- 1.4. [So should we keep enforcing the Same Origin Policy?](#so-should-we-keep-enforcing-the-same-origin-policy)  
 
 ### Usage
 
-2. [Cross-Origin Resource Sharing (CORS) to the rescue!](#cross-origin-resource-sharing-cors-to-the-rescue)
+2 [Cross-Origin Resource Sharing (CORS) to the rescue!](#cross-origin-resource-sharing-cors-to-the-rescue)
 
-   2.1. [When is CORS triggered?](#when-is-cors-triggered)
-   2.2. [What requests can use CORS?](#what-requests-can-use-cors)
-   2.3. [How to use CORS correctly?](#how-to-use-cors-correctly)
-   2.4. [What Headers do we need?](#what-headers-do-we-need)
-   2.5. [How to enable CORS on my Server?](#how-to-enable-cors-on-my-server)
-   2.6. [How to use resources like images, videos, links and scripts with CORS?](#how-to-use-resources-like-images-videos-links-and-scripts-with-cors)
+- 2.1. [When is CORS triggered?](#when-is-cors-triggered)
+- 2.2. [What requests can use CORS?](#what-requests-can-use-cors)
+- 2.3. [How to use CORS correctly?](#how-to-use-cors-correctly)
+- 2.4. [What Headers do we need?](#what-headers-do-we-need)
+- 2.5. [How to enable CORS on my Server?](#how-to-enable-cors-on-my-server)
+- 2.6. [How to use resources like images, videos, links and scripts with CORS?](#how-to-use-resources-like-images-videos-links-and-scripts-with-cors)
 
 ### Avoiding
 
-3. [How to bypass the Same Origin Policy (SOP) and avoid CORS?](#how-to-bypass-the-same-origin-policy-sop-and-avoid-cors)
+3 [How to bypass the Same Origin Policy (SOP) and avoid CORS?](#how-to-bypass-the-same-origin-policy-sop-and-avoid-cors)
 
-   3.1. [PostMessage Communication](#postmessage-communication)
-   3.2. [Use a proxy](#use-a-proxy)
+- 3.1. [PostMessage Communication](#postmessage-communication)
+- 3.2. [Use a proxy](#use-a-proxy)
 
 ### End
 
-4. [Further Reading](#further-reading)
-5. [Final Words](#final-words)
+4 [Further Reading](#further-reading)
+5 [Final Words](#final-words)
 
 ## What the f\* is CORS anyways?
 
