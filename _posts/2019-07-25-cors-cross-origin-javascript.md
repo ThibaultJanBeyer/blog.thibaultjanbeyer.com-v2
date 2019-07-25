@@ -11,31 +11,29 @@ I’ve been developing front-end applications all my life. Nevertheless, every t
 ## TL;DR
 
 <blockquote>
-
-<ul>
-<li>
-- It is a front-end dev’s problem that can only be fixed by a backend dev  
-</li>
-<li>
-- The Same Origin Policy is only enforced by the browsers (front-end)  
-</li>
-<li>
-- CORS has to be enabled by on the server (back-end)  
-</li>
-<li>
-- It is important that in the server response, the `Access-Control-Allow-Origin` header is set.  
-</li>
-<li>
-- It is very important that in the browsers request headers the `Origin` header is set.  
-</li>
-<li>
-- If you experience any issues with so called tainted content, check whether one of those headers is missing.  
-</li>
-<li>
-- https://enable-cors.org/index.html is a website that explains how to enable CORS on most backend technologies.
-</li>
-<ul>
-
+  <ul>
+    <li>
+      It is a front-end dev’s problem that can only be fixed by a backend dev  
+    </li>
+    <li>
+      The Same Origin Policy is only enforced by the browsers (front-end)  
+    </li>
+    <li>
+      CORS has to be enabled by on the server (back-end)  
+    </li>
+    <li>
+      It is important that in the server response, the `Access-Control-Allow-Origin` header is set.  
+    </li>
+    <li>
+      It is very important that in the browsers request headers the `Origin` header is set.  
+    </li>
+    <li>
+      If you experience any issues with so called tainted content, check whether one of those headers is missing.  
+    </li>
+    <li>
+      https://enable-cors.org/index.html is a website that explains how to enable CORS on most backend technologies.
+    </li>
+  <ul>
 </blockquote>
 
 ## TOC
