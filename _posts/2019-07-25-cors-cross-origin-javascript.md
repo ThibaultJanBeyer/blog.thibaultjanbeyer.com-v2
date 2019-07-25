@@ -347,8 +347,8 @@ It takes any request to the `/proxy` endpoint and passes it through to `www.goog
 
 #### Other Proxies
 
-- Webpack has its own proxy included: [https://webpack.js.org/configuration/dev-server/#devserverproxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
-- Robwu has hosted a proxy for us: [https://cors-anywhere.herokuapp.com/](https://cors-anywhere.herokuapp.com/) | [https://github.com/Rob--W/cors-anywhere/](https://github.com/Rob--W/cors-anywhere/)
+- [Webpack has its own proxy included](https://webpack.js.org/configuration/dev-server/#devserverproxy).
+- [Robwu has hosted a proxy for us](https://github.com/Rob--W/cors-anywhere/).
 
 ## Further Reading
 
