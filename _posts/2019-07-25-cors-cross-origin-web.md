@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easing the Cross-Origin pain on the Web
+title: Understanding the Same Origin Policy and how to Cross-Origin (CORS)
 excerpt: I’ve been developing frontends all my life. Nevertheless, every time I experience a CORS issue, I feel deep pain. Today I’ll try to ease that pain for all of us!
 image: /assets/cors/girl.jpg
 image_alt: A picture of a ever repeating pattern
