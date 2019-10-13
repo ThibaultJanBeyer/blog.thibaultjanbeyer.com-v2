@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Understanding the Same Origin Policy and how to Cross-Origin (CORS)
+title: Understanding Same Origin Policy & CORS
 excerpt: I’ve been developing frontends all my life. Nevertheless, every time I experience a CORS issue, I feel pain. Today I’ll try to ease that pain for all of us!
 image: /assets/cors/girl.jpg
 image_alt: A picture of a ever repeating pattern
 ---
 
 I’ve been developing front-end applications all my life. Nevertheless, every time I experience a CORS issue, I feel pain. Pain because no one is really sure how to handle it. Today I’ll try to ease that pain for all of us!
-CORS are tied to the Same Origin Policy which is in place to protect against a very specific type of attack. Most of the times it is unnecessary, sometimes it is.
+CORS are tied to the Same Origin Policy which protects against a very specific type of attack.
 
 ## TL;DR
 
