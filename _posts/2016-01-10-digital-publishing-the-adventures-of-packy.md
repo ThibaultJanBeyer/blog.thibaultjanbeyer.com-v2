@@ -13,7 +13,13 @@ Skills: inDesign, DPS, C4D, Illustrator</p></blockquote>
 <p>– Use the Digital Publishing Tools to create an Magazine as App for the iPad.</p>
 <h2>Solution</h2>
 <p>I’ve chosen to do a Magazine for children since there is none yet in the app store and it would give me the freedom to break the boundaries of Adobe Digital Publishing Suite (DPS). (Target group 6-13) Here it is:</p>
-<p>[video](/assets/The-Adventures-of-Packy.mp4)</p>
+<p>
+  <figure>
+    <video controls allowfullscreen>
+      <source src="/assets/The-Adventures-of-Packy.mp4" type="video/mp4">
+    </video>
+  </figure>
+</p>
 <h2>Creation</h2>
 <p>Once I had figured out what I wanted to do (cute elephants in a city), every project begins with doodles, after testing around different possibilities I used those Doodles:</p>
 <p><img class="alignnone size-medium wp-image-2145" src="{{ site.baseurl }}/assets/2015-09-08-10.54.42-300x400.jpg" alt="2015-09-08 10.54.42" width="300" height="400" /> <img class="alignnone size-medium wp-image-2142" src="{{ site.baseurl }}/assets/2015-09-08-10.54.20-300x400.jpg" alt="Packy Elefant Doodles" width="300" height="400" /></p>
